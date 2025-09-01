@@ -8,10 +8,7 @@
 // ctrl-shift-p)
 {
   "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5"
-    }
+    "enabled": false
   },
   "icon_theme": "Catppuccin Frappé",
   "outline_panel": {
@@ -42,7 +39,7 @@
   "vim": {
     "toggle_relative_line_numbers": true
   },
-  "theme": "IR Black",
+  "theme": "Yogi Amoled",
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false
@@ -66,13 +63,20 @@
   "auto_install_extensions": {
     "ir-black": true,
     "just": true,
-    "colored-zed-icons-theme": true,
+    "catppuccin-icons": true,
     "log": true,
     "make": true,
     "git-firefly": true,
     "toml": true,
     "html": true,
-    "templ": true
+    "templ": true,
+    "swift": true,
+    "package-swift-lsp": true,
+    "golangci-lint": true,
+    "gosum": true,
+    "cargo-appraiser": true,
+    "yogi-amoled": true,
+    "kotlin": true
   },
   "diagnostics": {
     "include_warnings": true,
@@ -106,10 +110,10 @@
         "command": [
           "golangci-lint",
           "run",
-          "--fix",
-          "--out-format",
-          "json",
-          "--issues-exit-code=1"
+          "--output.json.path",
+          "stdout",
+          "--show-stats=false",
+          "--output.text.path="
         ]
       }
     },
