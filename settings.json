@@ -10,12 +10,14 @@
   "agent": {
     "enabled": false
   },
+  "autosave": "on_focus_change",
   "icon_theme": "Catppuccin Frappé",
   "outline_panel": {
     "dock": "left"
   },
   "tab_bar": {
-    "show": true
+    "show": true,
+    "show_nav_history_buttons": false
   },
   "centered_layout": {
     "left_padding": 0.05,
@@ -75,6 +77,7 @@
     "log": true,
     "make": true,
     "package-swift-lsp": true,
+    "ruby": true,
     "swift": true,
     "templ": true,
     "toml": true,
