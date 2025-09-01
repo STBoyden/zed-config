@@ -18,8 +18,8 @@
     "show": true
   },
   "centered_layout": {
-    "left_padding": 0.15,
-    "right_padding": 0.15
+    "left_padding": 0.05,
+    "right_padding": 0.05
   },
   "project_panel": {
     "dock": "right"
@@ -61,8 +61,10 @@
   "wrap_guides": [100],
   "show_wrap_guides": true,
   "auto_install_extensions": {
+    "basher": true,
     "cargo-appraiser": true,
     "catppuccin-icons": true,
+    "gdscript": true,
     "git-firefly": true,
     "golangci-lint": true,
     "gosum": true,
@@ -101,7 +103,12 @@
       "language_servers": ["templ", "tailwindcss-language-server"]
     },
     "Swift": {
-      "formatter": { "external": { "command": "swiftformat" } }
+      "formatter": { "external": { "command": "swiftformat" } },
+      "inlay_hints": {
+        "show_parameter_hints": true,
+        "show_other_hints": true,
+        "enabled": true
+      }
     }
   },
   "lsp": {
