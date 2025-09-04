@@ -90,6 +90,9 @@
     }
   },
   "languages": {
+    "Shell Script": {
+      "formatter": { "external": { "command": "shfmt" } }
+    },
     "Go": {
       "language_servers": ["gopls", "golangci-lint"],
       "inlay_hints": {
