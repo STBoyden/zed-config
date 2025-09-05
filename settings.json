@@ -37,6 +37,9 @@
   "ui_font_weight": 500,
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "none",
+  "preview_tabs": {
+    "enabled": false
+  },
   "vim_mode": false,
   "vim": {
     "toggle_relative_line_numbers": true
