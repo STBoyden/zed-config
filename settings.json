@@ -10,7 +10,6 @@
   "agent": {
     "enabled": false
   },
-  "autosave": "on_focus_change",
   "icon_theme": "Catppuccin Frappé",
   "outline_panel": {
     "dock": "left"
