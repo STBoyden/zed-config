@@ -29,10 +29,10 @@
     "edit_prediction_provider": "none"
   },
   "use_autoclose": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "ui_font_size": 18,
+  "buffer_font_size": 20,
   "buffer_font_family": "Iosevka Nerd Font",
-  "ui_font_family": "Iosevka Nerd Font",
+  "ui_font_family": "SF Pro Display",
   "ui_font_weight": 500,
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "none",
@@ -43,12 +43,13 @@
   "vim": {
     "toggle_relative_line_numbers": true
   },
-  "theme": "Yogi Amoled",
+  "theme": "IR Black",
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false
   },
   "terminal": {
+    "font_size": 16,
     "env": {
       "EDITOR": "zed --wait"
     },
