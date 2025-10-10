@@ -43,7 +43,7 @@
   "vim": {
     "toggle_relative_line_numbers": true
   },
-  "theme": "IR Black",
+  "theme": "Ayu Dark",
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false
@@ -109,7 +109,10 @@
       "formatter": "language_server",
       "format_on_save": "on",
       "use_autoclose": false,
-      "language_servers": ["templ", "tailwindcss-language-server"]
+      "language_servers": ["templ", "tailwindcss-language-server"],
+      "jsx_tag_auto_close": {
+        "enabled": true
+      }
     },
     "Swift": {
       "formatter": { "external": { "command": "swiftformat" } },
@@ -127,6 +130,15 @@
         "show_other_hints": false,
         "enabled": true
       }
+    },
+    "Vue.js": {
+      "inlay_hints": {
+        "show_background": true,
+        "show_parameter_hints": false,
+        "show_other_hints": false,
+        "enabled": true
+      },
+      "jsx_tag_auto_close": { "enabled": true }
     }
   },
   "lsp": {

@@ -14,7 +14,11 @@
       "cmd-b": "workspace::ToggleRightDock",
       "ctrl-b": "workspace::ToggleRightDock",
       "shift shift": "file_finder::Toggle",
-      "alt-\/": "terminal_panel::ToggleFocus"
+      "alt-\/": "terminal_panel::ToggleFocus",
+      "cmd-shift-g": [
+        "task::Spawn",
+        { "task_name": "LazyGit", "reveal_target": "center" }
+      ]
     }
   },
   {
