@@ -18,6 +18,10 @@
       "cmd-shift-g": [
         "task::Spawn",
         { "task_name": "LazyGit", "reveal_target": "center" }
+      ],
+      "ctrl-shift-g": [
+        "task::Spawn",
+        { "task_name": "LazyGit", "reveal_target": "center" }
       ]
     }
   },
