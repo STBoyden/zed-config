@@ -69,12 +69,11 @@
     "basher": true,
     "cargo-appraiser": true,
     "catppuccin-icons": true,
-    "gdscript": true,
+    "crates-lsp": true,
     "git-firefly": true,
     "golangci-lint": true,
     "gosum": true,
     "html": true,
-    "ir-black": true,
     "just": true,
     "kotlin": true,
     "log": true,
@@ -83,8 +82,7 @@
     "ruby": true,
     "swift": true,
     "templ": true,
-    "toml": true,
-    "yogi-amoled": true
+    "toml": true
   },
   "diagnostics": {
     "include_warnings": true,
