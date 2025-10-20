@@ -37,5 +37,10 @@
       "alt-\/": "workspace::CloseActiveDock", // "active dock" would be the terminal at this point
       "ctrl+q": ["terminal::SendKeystroke", "ctrl+q"]
     }
+  },
+  {
+    "bindings": {
+      "alt-t": "workspace::NewCenterTerminal"
+    }
   }
 ]

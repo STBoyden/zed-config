@@ -7,10 +7,16 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "redact_private_values": true,
+  "confirm_quit": true,
   "agent": {
     "enabled": false
   },
-  "icon_theme": "Catppuccin Frappé",
+  "icon_theme": {
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Frappé",
+    "mode": "system"
+  },
   "outline_panel": {
     "dock": "left"
   },
@@ -29,13 +35,13 @@
     "edit_prediction_provider": "none"
   },
   "use_autoclose": true,
-  "ui_font_size": 18,
-  "buffer_font_size": 18,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
   "buffer_font_family": "Cascadia Code",
   "ui_font_family": ".SystemUIFont",
   "ui_font_weight": 500,
   "unstable.ui_density": "comfortable",
-  "restore_on_startup": "none",
+  "restore_on_startup": "last_workspace",
   "preview_tabs": {
     "enabled": false
   },
@@ -43,12 +49,20 @@
   "vim": {
     "toggle_relative_line_numbers": true
   },
-  "theme": "Ayu Dark",
+  "theme": {
+    "dark": "Ayu Dark",
+    "light": "Ayu Light",
+    "mode": "system"
+  },
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false
   },
   "terminal": {
+    "toolbar": {
+      "breadcrumbs": false
+    },
+    "font_family": "Cascadia Code NF",
     "font_size": 16,
     "env": {
       "EDITOR": "zed --wait"
@@ -113,7 +127,11 @@
       }
     },
     "Swift": {
-      "formatter": { "external": { "command": "swiftformat" } },
+      "completions": {
+        "lsp_fetch_timeout_ms": 0
+      },
+      "hard_tabs": true,
+      "formatter": { "external": { "command": "swift-format" } },
       "inlay_hints": {
         "show_background": true,
         "show_parameter_hints": false,
