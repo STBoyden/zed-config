@@ -12,7 +12,7 @@ case $code in
         git pull --ff-only 1>/dev/null \
             || (
                 echo "$tag Could not update from remote (exit code ${?}). Please resolve manually." \
-                && exit 1
+                && exit 127
             )
 		;;
 
@@ -25,8 +25,15 @@ case $code in
 	    ;;
 esac
 
+echo "$tag Updating remote..."
+
 git add .
 git commit -m "update: state of config at $(date "+%Y-%m-%d %H:%M:%S")"
-git push
+git push || (
+    echo "$tag Remote could not be updated (exit code ${?}). Please resolve manually." \
+    && exit 127
+)
+
+echo "$tag ... Updated remote."
 
 read -p "Press Enter to exit" </dev/tty
