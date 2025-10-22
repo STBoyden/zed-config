@@ -14,5 +14,31 @@
     "show_command": false,
     "allow_concurrent_runs": true,
     "use_new_terminal": true
+  },
+  {
+    "label": "Zed Config: Check for update",
+    "command": "./scripts/check-remote.sh",
+    "cwd": "~/.config/zed",
+    "reveal_target": "center",
+    "allow_concurrent_runs": false,
+    "use_new_terminal": true
+  },
+  {
+    "label": "Zed Config: Update local from remote",
+    "command": "./scripts/update-local.sh",
+    "cwd": "~/.config/zed",
+    "hide": "on_success",
+    "reveal_target": "center",
+    "allow_concurrent_runs": false,
+    "use_new_terminal": true
+  },
+  {
+    "label": "Zed Config: Update remote from local",
+    "command": "./scripts/update-remote.sh",
+    "cwd": "~/.config/zed",
+    "hide": "on_success",
+    "reveal_target": "center",
+    "allow_concurrent_runs": false,
+    "use_new_terminal": true
   }
 ]

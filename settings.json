@@ -7,6 +7,8 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "show_signature_help_after_edits": true,
+  "auto_signature_help": true,
   "tabs": {
     "show_diagnostics": "all",
     "file_icons": true,
@@ -38,6 +40,13 @@
     "right_padding": 0.05
   },
   "project_panel": {
+    "auto_fold_dirs": false,
+    "auto_reveal_entries": true,
+    "folder_icons": true,
+    "file_icons": true,
+    "hide_gitignore": false,
+    "indent_size": 20.0,
+    "entry_spacing": "comfortable",
     "hide_root": true,
     "sticky_scroll": false,
     "dock": "right"
@@ -49,7 +58,7 @@
   "ui_font_size": 15.0,
   "buffer_font_size": 16,
   "buffer_font_family": ".ZedMono",
-  "ui_font_family": ".ZedMono",
+  "ui_font_family": ".ZedSans",
   "ui_font_weight": 500,
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "last_workspace",
