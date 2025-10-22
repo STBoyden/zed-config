@@ -33,7 +33,7 @@ echo "$tag Updating from remote..."
 git pull --ff-only 1>/dev/null \
     || (
         echo "$tag Could not update from remote (exit code ${?}). Please resolve manually." \
-        && exit 1
+        && exit 127
     )
 
 echo "$tag ... Updated successfully."
@@ -44,7 +44,10 @@ $has_local_changes && \
     && git checkout main \
     && (
         git merge --ff-only 1>/dev/null "$branch" \
-        || echo "$tag Could not merge local changes from $branch. Please try resolving manually."
+        || (
+            echo "$tag Could not merge local changes from $branch. Please try resolving manually." \
+            && exit 127
+        )
     )
 
 read -p "Press Enter to exit" </dev/tty
