@@ -28,7 +28,9 @@ esac
 echo "$tag Updating remote..."
 
 git add .
-git commit -m "update: state of config at $(date "+%Y-%m-%d %H:%M:%S")"
+git commit \
+    -m "update: state of config at $(date "+%Y-%m-%d %H:%M:%S")" \
+    -m "Updates from device with hostname: $(hostname)"
 git push || (
     echo "$tag Remote could not be updated (exit code ${?}). Please resolve manually." \
     && exit 127
