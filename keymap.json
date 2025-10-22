@@ -14,15 +14,7 @@
       "cmd-b": "workspace::ToggleRightDock",
       "ctrl-b": "workspace::ToggleRightDock",
       "shift shift": "file_finder::Toggle",
-      "alt-\/": "terminal_panel::ToggleFocus",
-      "cmd-shift-g": [
-        "task::Spawn",
-        { "task_name": "LazyGit", "reveal_target": "center" }
-      ],
-      "ctrl-shift-g": [
-        "task::Spawn",
-        { "task_name": "LazyGit", "reveal_target": "center" }
-      ]
+      "alt-\/": "terminal_panel::ToggleFocus"
     }
   },
   {
@@ -41,6 +33,42 @@
   {
     "bindings": {
       "alt-t": "workspace::NewCenterTerminal"
+    }
+  },
+  {
+    "context": "ContextEditor > Editor",
+    "bindings": {
+      "cmd-shift-g": null
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "cmd-shift-g": null
+    }
+  },
+  {
+    "context": "Editor || Workspace",
+    "bindings": {
+      "cmd-shift-g": [
+        "task::Spawn",
+        {
+          "task_name": "LazyGit",
+          "reveal_target": "center"
+        }
+      ]
+    }
+  },
+  {
+    "context": "(Editor || Workspace)",
+    "bindings": {
+      "ctrl-shift-g": [
+        "task::Spawn",
+        {
+          "task_name": "LazyGit",
+          "reveal_target": "center"
+        }
+      ]
     }
   }
 ]

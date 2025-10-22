@@ -7,6 +7,15 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "tabs": {
+    "show_diagnostics": "all",
+    "file_icons": true,
+    "git_status": true
+  },
+  "title_bar": {
+    "show_branch_icon": true,
+    "show_menus": true
+  },
   "redact_private_values": true,
   "confirm_quit": true,
   "agent": {
@@ -14,7 +23,7 @@
   },
   "icon_theme": {
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Frappé",
+    "dark": "Catppuccin Mocha",
     "mode": "system"
   },
   "outline_panel": {
@@ -29,16 +38,18 @@
     "right_padding": 0.05
   },
   "project_panel": {
+    "hide_root": true,
+    "sticky_scroll": false,
     "dock": "right"
   },
   "features": {
     "edit_prediction_provider": "none"
   },
   "use_autoclose": true,
-  "ui_font_size": 16,
+  "ui_font_size": 15.0,
   "buffer_font_size": 16,
-  "buffer_font_family": "Cascadia Code",
-  "ui_font_family": ".SystemUIFont",
+  "buffer_font_family": ".ZedMono",
+  "ui_font_family": ".ZedMono",
   "ui_font_weight": 500,
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "last_workspace",
@@ -62,7 +73,8 @@
     "toolbar": {
       "breadcrumbs": false
     },
-    "font_family": "Cascadia Code NF",
+    "font_family": ".ZedMono",
+    "font_fallbacks": ["Cascadia Code NF"],
     "font_size": 16,
     "env": {
       "EDITOR": "zed --wait"
@@ -73,8 +85,11 @@
     "show": "never"
   },
   "indent_guides": {
+    "active_line_width": 3,
+    "line_width": 2,
+    "background_coloring": "disabled",
     "enabled": true,
-    "coloring": "indent_aware"
+    "coloring": "fixed"
   },
   "relative_line_numbers": false,
   "wrap_guides": [100],
