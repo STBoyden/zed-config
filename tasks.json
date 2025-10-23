@@ -12,8 +12,8 @@
     "reveal_target": "center",
     "show_summary": false,
     "show_command": false,
-    "allow_concurrent_runs": true,
-    "use_new_terminal": true
+    "allow_concurrent_runs": false,
+    "use_new_terminal": false
   },
   {
     "label": "Zed Config: Check for update",
