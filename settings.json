@@ -7,6 +7,9 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "prettier": {
+    "allowed": false
+  },
   "show_signature_help_after_edits": true,
   "auto_signature_help": true,
   "tabs": {
@@ -61,7 +64,7 @@
   "buffer_line_height": {
     "custom": 2.0
   },
-  "ui_font_family": ".ZedSans",
+  "ui_font_family": ".ZedMono",
   "ui_font_weight": 500,
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "last_workspace",
@@ -132,6 +135,16 @@
     }
   },
   "languages": {
+    "TSX": {
+      "prettier": {
+        "allowed": true
+      }
+    },
+    "TypeScript": {
+      "prettier": {
+        "allowed": true
+      }
+    },
     "Shell Script": {
       "formatter": { "external": { "command": "shfmt" } }
     },
