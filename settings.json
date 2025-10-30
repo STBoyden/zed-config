@@ -7,6 +7,7 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "completions": {},
   "prettier": {
     "allowed": false
   },
@@ -21,7 +22,6 @@
     "show_branch_icon": true,
     "show_menus": true
   },
-  "redact_private_values": true,
   "confirm_quit": true,
   "agent": {
     "enabled": false
@@ -53,6 +53,19 @@
     "hide_root": true,
     "sticky_scroll": false,
     "dock": "right"
+  },
+  "theme_overrides": {
+    "Ayu Dark": {
+      "vim.mode.text": "#294d64",
+      "vim.normal.background": "#39bae6",
+      "vim.insert.background": "#aad94C",
+      "vim.visual.background": "#ff8f40",
+      "vim.replace.background": "#ed8796",
+      "vim.visual_line.background": "#ffb454",
+      "vim.visual_block.background": "#e6b673",
+      "vim.helix_select.background": "#b3blad",
+      "vim.helix_normal.background": "#59c2ff"
+    }
   },
   "features": {
     "edit_prediction_provider": "none"
@@ -89,7 +102,9 @@
       "breadcrumbs": false
     },
     "font_family": ".ZedMono",
-    "font_fallbacks": ["Cascadia Code NF"],
+    "font_fallbacks": [
+      "Cascadia Code NF"
+    ],
     "font_size": 16,
     "env": {
       "EDITOR": "zed --wait"
@@ -107,7 +122,9 @@
     "coloring": "fixed"
   },
   "relative_line_numbers": false,
-  "wrap_guides": [100],
+  "wrap_guides": [
+    100
+  ],
   "show_wrap_guides": true,
   "auto_install_extensions": {
     "basher": true,
@@ -146,10 +163,17 @@
       }
     },
     "Shell Script": {
-      "formatter": { "external": { "command": "shfmt" } }
+      "formatter": {
+        "external": {
+          "command": "shfmt"
+        }
+      }
     },
     "Go": {
-      "language_servers": ["gopls", "golangci-lint"],
+      "language_servers": [
+        "gopls",
+        "golangci-lint"
+      ],
       "inlay_hints": {
         "show_background": true,
         "show_parameter_hints": false,
@@ -161,17 +185,21 @@
       "formatter": "language_server",
       "format_on_save": "on",
       "use_autoclose": false,
-      "language_servers": ["templ", "tailwindcss-language-server"],
+      "language_servers": [
+        "templ",
+        "tailwindcss-language-server"
+      ],
       "jsx_tag_auto_close": {
         "enabled": true
       }
     },
     "Swift": {
-      "completions": {
-        "lsp_fetch_timeout_ms": 0
-      },
       "hard_tabs": true,
-      "formatter": { "external": { "command": "swift-format" } },
+      "formatter": {
+        "external": {
+          "command": "swift-format"
+        }
+      },
       "inlay_hints": {
         "show_background": true,
         "show_parameter_hints": false,
@@ -194,7 +222,9 @@
         "show_other_hints": false,
         "enabled": true
       },
-      "jsx_tag_auto_close": { "enabled": true }
+      "jsx_tag_auto_close": {
+        "enabled": true
+      }
     }
   },
   "lsp": {
