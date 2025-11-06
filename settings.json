@@ -8,6 +8,9 @@
 // ctrl-shift-p)
 {
   "show_whitespaces": "all",
+  "whitespace_map": {
+    "tab": "⇉"
+  },
   "tab_size": 2,
   "completions": {},
   "prettier": {
