@@ -9,7 +9,7 @@
 {
   "show_whitespaces": "all",
   "whitespace_map": {
-    "tab": "⇉"
+    "tab": ">"
   },
   "tab_size": 2,
   "completions": {},
