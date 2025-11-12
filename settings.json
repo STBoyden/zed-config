@@ -19,6 +19,7 @@
   "show_signature_help_after_edits": true,
   "auto_signature_help": true,
   "tabs": {
+    "close_position": "left",
     "show_diagnostics": "all",
     "file_icons": true,
     "git_status": true
