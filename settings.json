@@ -127,7 +127,7 @@
     "enabled": true,
     "coloring": "fixed"
   },
-  "relative_line_numbers": false,
+  "relative_line_numbers": "disabled",
   "wrap_guides": [
     100
   ],
@@ -147,6 +147,7 @@
     "make": true,
     "package-swift-lsp": true,
     "ruby": true,
+    "svelte": true,
     "swift": true,
     "templ": true,
     "toml": true
