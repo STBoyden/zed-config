@@ -7,6 +7,9 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "sticky_scroll": {
+    "enabled": true
+  },
   "show_whitespaces": "all",
   "whitespace_map": {
     "tab": ">"
@@ -90,7 +93,7 @@
   "preview_tabs": {
     "enabled": false
   },
-  "vim_mode": true,
+  "vim_mode": false,
   "vim": {
     "toggle_relative_line_numbers": true
   },
@@ -176,6 +179,7 @@
         }
       }
     },
+    "Svelte": {},
     "Go": {
       "language_servers": [
         "gopls",
