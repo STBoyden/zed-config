@@ -8,7 +8,7 @@
 // ctrl-shift-p)
 {
   "sticky_scroll": {
-    "enabled": true
+    "enabled": false
   },
   "show_whitespaces": "all",
   "whitespace_map": {
