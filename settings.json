@@ -36,8 +36,8 @@
     "enabled": false
   },
   "icon_theme": {
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha",
+    "light": "VSCode Icons for Zed (Light Official Icons)",
+    "dark": "VSCode Icons for Zed (Dark Official Icons)",
     "mode": "system"
   },
   "outline_panel": {
@@ -153,7 +153,8 @@
     "svelte": true,
     "swift": true,
     "templ": true,
-    "toml": true
+    "toml": true,
+    "vscode-icons": true
   },
   "diagnostics": {
     "include_warnings": true,
