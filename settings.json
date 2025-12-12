@@ -94,7 +94,7 @@
   "preview_tabs": {
     "enabled": false
   },
-  "vim_mode": true,
+  "vim_mode": false,
   "vim": {
     "toggle_relative_line_numbers": true
   },
