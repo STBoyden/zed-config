@@ -99,8 +99,8 @@
     "toggle_relative_line_numbers": true
   },
   "theme": {
-    "dark": "Ayu Dark",
-    "light": "Ayu Light",
+    "dark": "Nord Dark",
+    "light": "Nord Light",
     "mode": "system"
   },
   "format_on_save": "on",
@@ -149,6 +149,7 @@
     "kotlin": true,
     "log": true,
     "make": true,
+    "nord": true,
     "package-swift-lsp": true,
     "ruby": true,
     "svelte": true,
