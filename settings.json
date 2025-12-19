@@ -151,6 +151,7 @@
     "make": true,
     "nord": true,
     "package-swift-lsp": true,
+    "poimandres": true,
     "ruby": true,
     "svelte": true,
     "swift": true,
