@@ -7,6 +7,10 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "use_system_path_prompts": false,
+  "use_system_prompts": false,
+  "preferred_line_length": 80,
+  "soft_wrap": "none",
   "colorize_brackets": true,
   "sticky_scroll": {
     "enabled": false
@@ -90,7 +94,7 @@
   "ui_font_family": ".ZedMono",
   "ui_font_weight": 500,
   "unstable.ui_density": "comfortable",
-  "restore_on_startup": "last_workspace",
+  "restore_on_startup": "none",
   "preview_tabs": {
     "enabled": false
   },
@@ -99,8 +103,8 @@
     "toggle_relative_line_numbers": true
   },
   "theme": {
-    "dark": "poimandres blurry",
-    "light": "Nord Light",
+    "dark": "Zedokai Darker (Filter Spectrum)",
+    "light": "Zedokai Light (Filter Sun)",
     "mode": "system"
   },
   "format_on_save": "on",
@@ -169,12 +173,20 @@
     "TSX": {
       "prettier": {
         "allowed": true
-      }
+      },
+      "language_servers": [
+        "typescript-language-server",
+        "!vtsls"
+      ]
     },
     "TypeScript": {
       "prettier": {
-        "allowed": true
-      }
+        "allowed": true,
+      },
+      "language_servers": [
+        "typescript-language-server",
+        "!vtsls"
+      ]
     },
     "Shell Script": {
       "formatter": {
