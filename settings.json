@@ -7,8 +7,8 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
-  "use_system_path_prompts": false,
-  "use_system_prompts": false,
+  "use_system_path_prompts": true,
+  "use_system_prompts": true,
   "preferred_line_length": 80,
   "soft_wrap": "none",
   "colorize_brackets": true,
