@@ -7,6 +7,7 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "enable_language_server": true,
   "use_system_path_prompts": true,
   "use_system_prompts": true,
   "preferred_line_length": 80,
@@ -98,7 +99,7 @@
   "preview_tabs": {
     "enabled": false
   },
-  "vim_mode": false,
+  "vim_mode": true,
   "vim": {
     "toggle_relative_line_numbers": true
   },
