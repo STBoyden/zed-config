@@ -99,7 +99,7 @@
   "preview_tabs": {
     "enabled": false
   },
-  "vim_mode": true,
+  "vim_mode": false,
   "vim": {
     "toggle_relative_line_numbers": true
   },
@@ -176,8 +176,8 @@
         "allowed": true
       },
       "language_servers": [
-        "typescript-language-server",
-        "!vtsls"
+        "vtsls",
+        "!typescript-language-server",
       ]
     },
     "TypeScript": {
@@ -243,17 +243,6 @@
         "enabled": true
       }
     },
-    "Vue.js": {
-      "inlay_hints": {
-        "show_background": true,
-        "show_parameter_hints": false,
-        "show_other_hints": false,
-        "enabled": true
-      },
-      "jsx_tag_auto_close": {
-        "enabled": true
-      }
-    }
   },
   "lsp": {
     "golangci-lint": {
