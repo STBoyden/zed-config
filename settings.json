@@ -7,6 +7,12 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "edit_predictions": {
+    "disabled_globs": [
+      ".env.*",
+      "!.env.example"
+    ]
+  },
   "enable_language_server": true,
   "use_system_path_prompts": true,
   "use_system_prompts": true,
@@ -21,7 +27,6 @@
     "tab": ">"
   },
   "tab_size": 2,
-  "completions": {},
   "prettier": {
     "allowed": false
   },
@@ -39,7 +44,14 @@
   },
   "confirm_quit": true,
   "agent": {
-    "enabled": false
+    "always_allow_tool_actions": true,
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-opus-4-5"
+    },
+    "dock": "left",
+    "button": true,
+    "enabled": true
   },
   "icon_theme": {
     "light": "VSCode Icons for Zed (Light Official Icons)",
@@ -83,7 +95,7 @@
     }
   },
   "features": {
-    "edit_prediction_provider": "none"
+    "edit_prediction_provider": "zed"
   },
   "use_autoclose": true,
   "ui_font_size": 15.0,
@@ -95,7 +107,7 @@
   "ui_font_family": ".ZedMono",
   "ui_font_weight": 500,
   "unstable.ui_density": "comfortable",
-  "restore_on_startup": "none",
+  "restore_on_startup": "launchpad",
   "preview_tabs": {
     "enabled": false
   },

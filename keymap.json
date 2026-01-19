@@ -10,7 +10,7 @@
     "context": "Workspace",
     "bindings": {
       "alt alt": "command_palette::Toggle",
-      "ctrl-alt-b": "workspace::ToggleLeftDock",
+      "cmd-?": "workspace::ToggleLeftDock",
       "cmd-b": "workspace::ToggleRightDock",
       "ctrl-b": "workspace::ToggleRightDock",
       "shift shift": "file_finder::Toggle",
@@ -27,7 +27,10 @@
     "context": "Terminal",
     "bindings": {
       "alt-\/": "workspace::CloseActiveDock", // "active dock" would be the terminal at this point
-      "ctrl+q": ["terminal::SendKeystroke", "ctrl+q"]
+      "ctrl+q": [
+        "terminal::SendKeystroke",
+        "ctrl+q"
+      ]
     }
   },
   {
