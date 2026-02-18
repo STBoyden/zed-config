@@ -60,7 +60,7 @@
     "mode": "system"
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "tab_bar": {
     "show": true,
@@ -156,6 +156,8 @@
     "cargo-appraiser": true,
     "catppuccin-icons": true,
     "crates-lsp": true,
+    "docker-compose": true,
+    "dockerfile": true,
     "git-firefly": true,
     "golangci-lint": true,
     "gosum": true,
