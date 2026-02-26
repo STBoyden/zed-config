@@ -128,7 +128,7 @@
     "toolbar": {
       "breadcrumbs": false
     },
-    "font_family": ".ZedMono",
+    "font_family": "IoskeleyMono Nerd Font",
     "font_fallbacks": [
       "Cascadia Code NF"
     ],
