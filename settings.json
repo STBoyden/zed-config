@@ -45,7 +45,9 @@
   },
   "confirm_quit": true,
   "agent": {
-    "always_allow_tool_actions": true,
+    "tool_permissions": {
+      "default": "allow"
+    },
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-opus-4-5"
