@@ -7,6 +7,7 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "disable_ai": true,
   "document_folding_ranges": "on",
   "edit_predictions": {
     "provider": "zed",
