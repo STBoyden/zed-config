@@ -7,6 +7,7 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "document_folding_ranges": "on",
   "edit_predictions": {
     "provider": "zed",
     "disabled_globs": [
@@ -57,16 +58,17 @@
     "enabled": true
   },
   "icon_theme": {
-    "light": "VSCode Icons for Zed (Light Official Icons)",
-    "dark": "VSCode Icons for Zed (Dark Official Icons)",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
     "mode": "system"
   },
   "outline_panel": {
     "dock": "right"
   },
   "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false,
     "show": true,
-    "show_nav_history_buttons": false
+    "show_nav_history_buttons": true
   },
   "centered_layout": {
     "left_padding": 0.05,
@@ -116,8 +118,8 @@
     "toggle_relative_line_numbers": true
   },
   "theme": {
-    "dark": "Zedokai Darker (Filter Spectrum)",
-    "light": "Zedokai Light (Filter Sun)",
+    "dark": "Catppuccin Mocha",
+    "light": "Catppuccin Latte",
     "mode": "system"
   },
   "format_on_save": "on",
@@ -152,6 +154,7 @@
   "wrap_guides": [
     100
   ],
+  "semantic_tokens": "combined",
   "show_wrap_guides": true,
   "auto_install_extensions": {
     "basher": true,
