@@ -160,6 +160,7 @@
   "auto_install_extensions": {
     "basher": true,
     "cargo-appraiser": true,
+    "catppuccin": true,
     "catppuccin-icons": true,
     "crates-lsp": true,
     "docker-compose": true,
