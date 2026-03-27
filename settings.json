@@ -101,7 +101,7 @@
     }
   },
   "use_autoclose": true,
-  "ui_font_size": 15.0,
+  "ui_font_size": 16.0,
   "buffer_font_size": 16,
   "buffer_font_family": "IoskeleyMono Nerd Font",
   "buffer_line_height": {
@@ -112,7 +112,7 @@
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "launchpad",
   "preview_tabs": {
-    "enabled": false
+    "enabled": true
   },
   "vim_mode": false,
   "vim": {
@@ -195,19 +195,14 @@
       "prettier": {
         "allowed": true
       },
-      "language_servers": [
-        "vtsls",
-        "!typescript-language-server",
-      ]
     },
     "TypeScript": {
       "prettier": {
         "allowed": true,
       },
-      "language_servers": [
-        "typescript-language-server",
-        "!vtsls"
-      ]
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
     },
     "Shell Script": {
       "formatter": {
