@@ -107,13 +107,8 @@
     },
   },
   "use_autoclose": true,
-<<<<<<< Updated upstream
-  "ui_font_size": 16.0,
-  "buffer_font_size": 16,
-=======
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
->>>>>>> Stashed changes
   "buffer_font_family": "IoskeleyMono Nerd Font",
   "buffer_line_height": "comfortable",
   "ui_font_family": ".ZedSans",
@@ -121,11 +116,7 @@
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "launchpad",
   "preview_tabs": {
-<<<<<<< Updated upstream
     "enabled": true
-=======
-    "enabled": true,
->>>>>>> Stashed changes
   },
   "vim_mode": false,
   "vim": {
@@ -222,13 +213,9 @@
         "allowed": true,
       },
       "code_actions_on_format": {
-<<<<<<< Updated upstream
         "source.fixAll.eslint": true
       }
-=======
-        "source.fixAll.eslint": true,
       },
->>>>>>> Stashed changes
     },
     "Shell Script": {
       "formatter": {
