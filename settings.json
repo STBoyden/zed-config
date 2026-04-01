@@ -7,31 +7,37 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "text_rendering_mode": "platform_default",
+  "which_key": {
+    "enabled": true,
+  },
   "disable_ai": true,
   "document_folding_ranges": "on",
   "edit_predictions": {
     "provider": "zed",
-    "disabled_globs": [
-      ".env.*",
-      "!.env.example"
-    ]
+    "disabled_globs": [".env.*", "!.env.example"],
   },
   "enable_language_server": true,
   "use_system_path_prompts": true,
   "use_system_prompts": true,
-  "preferred_line_length": 80,
+  "preferred_line_length": 100,
   "soft_wrap": "none",
   "colorize_brackets": true,
   "sticky_scroll": {
-    "enabled": false
+    "enabled": false,
   },
   "show_whitespaces": "all",
   "whitespace_map": {
-    "tab": ">"
+    "tab": ">",
   },
   "tab_size": 2,
   "prettier": {
-    "allowed": false
+    "allowed": true,
   },
   "show_signature_help_after_edits": true,
   "auto_signature_help": true,
@@ -39,41 +45,41 @@
     "close_position": "left",
     "show_diagnostics": "all",
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
   },
   "title_bar": {
     "show_branch_icon": true,
-    "show_menus": true
+    "show_menus": true,
   },
   "confirm_quit": true,
   "agent": {
     "tool_permissions": {
-      "default": "allow"
+      "default": "allow",
     },
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-opus-4-5"
+      "model": "claude-opus-4-5",
     },
     "dock": "left",
     "button": true,
-    "enabled": true
+    "enabled": true,
   },
   "icon_theme": {
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha",
-    "mode": "system"
+    "mode": "system",
   },
   "outline_panel": {
-    "dock": "right"
+    "dock": "left",
   },
   "tab_bar": {
     "show_pinned_tabs_in_separate_row": false,
     "show": true,
-    "show_nav_history_buttons": true
+    "show_nav_history_buttons": true,
   },
   "centered_layout": {
     "left_padding": 0.05,
-    "right_padding": 0.05
+    "right_padding": 0.05,
   },
   "project_panel": {
     "auto_fold_dirs": false,
@@ -85,7 +91,7 @@
     "entry_spacing": "comfortable",
     "hide_root": true,
     "sticky_scroll": false,
-    "dock": "right"
+    "dock": "right",
   },
   "theme_overrides": {
     "Ayu Dark": {
@@ -97,66 +103,69 @@
       "vim.visual_line.background": "#ffb454",
       "vim.visual_block.background": "#e6b673",
       "vim.helix_select.background": "#b3blad",
-      "vim.helix_normal.background": "#59c2ff"
-    }
+      "vim.helix_normal.background": "#59c2ff",
+    },
   },
   "use_autoclose": true,
+<<<<<<< Updated upstream
   "ui_font_size": 16.0,
   "buffer_font_size": 16,
+=======
+  "ui_font_size": 15.0,
+  "buffer_font_size": 15.0,
+>>>>>>> Stashed changes
   "buffer_font_family": "IoskeleyMono Nerd Font",
-  "buffer_line_height": {
-    "custom": 2.0
-  },
-  "ui_font_family": "IoskeleyMono Nerd Font",
+  "buffer_line_height": "comfortable",
+  "ui_font_family": ".ZedSans",
   "ui_font_weight": 500,
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "launchpad",
   "preview_tabs": {
+<<<<<<< Updated upstream
     "enabled": true
+=======
+    "enabled": true,
+>>>>>>> Stashed changes
   },
   "vim_mode": false,
   "vim": {
-    "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true,
   },
   "theme": {
     "dark": "Catppuccin Mocha",
     "light": "Catppuccin Latte",
-    "mode": "system"
+    "mode": "system",
   },
   "format_on_save": "on",
   "inlay_hints": {
-    "enabled": false
+    "enabled": false,
   },
   "terminal": {
     "toolbar": {
-      "breadcrumbs": false
+      "breadcrumbs": false,
     },
     "font_family": "IoskeleyMono Nerd Font",
-    "font_fallbacks": [
-      "Cascadia Code NF"
-    ],
+    "font_fallbacks": ["Cascadia Code NF"],
     "font_size": 16,
     "env": {
-      "EDITOR": "zed --wait"
+      "EDITOR": "zed --wait",
     },
-    "cursor_shape": "bar"
+    "cursor_shape": "bar",
   },
   "scrollbar": {
-    "show": "never"
+    "show": "never",
   },
   "indent_guides": {
     "active_line_width": 3,
     "line_width": 2,
     "background_coloring": "disabled",
     "enabled": true,
-    "coloring": "fixed"
+    "coloring": "fixed",
   },
   "relative_line_numbers": "disabled",
-  "wrap_guides": [
-    100
-  ],
+  "wrap_guides": [100],
   "semantic_tokens": "combined",
-  "show_wrap_guides": true,
+  "show_wrap_guides": false,
   "auto_install_extensions": {
     "basher": true,
     "cargo-appraiser": true,
@@ -187,13 +196,25 @@
   "diagnostics": {
     "include_warnings": true,
     "inline": {
-      "enabled": true
-    }
+      "update_debounce_ms": 100,
+      "padding": 4,
+      "min_column": 0,
+      "enabled": true,
+    },
+    "button": true,
   },
   "languages": {
+    "Prisma": {
+      "prettier": {
+        "allowed": false,
+      },
+    },
     "TSX": {
       "prettier": {
-        "allowed": true
+        "allowed": true,
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
       },
     },
     "TypeScript": {
@@ -201,62 +222,56 @@
         "allowed": true,
       },
       "code_actions_on_format": {
+<<<<<<< Updated upstream
         "source.fixAll.eslint": true
       }
+=======
+        "source.fixAll.eslint": true,
+      },
+>>>>>>> Stashed changes
     },
     "Shell Script": {
       "formatter": {
         "external": {
-          "command": "shfmt"
-        }
-      }
+          "command": "shfmt",
+        },
+      },
     },
     "Svelte": {},
     "Go": {
-      "language_servers": [
-        "gopls",
-        "golangci-lint"
-      ],
+      "language_servers": ["gopls", "golangci-lint"],
       "inlay_hints": {
         "show_background": true,
         "show_parameter_hints": false,
         "show_other_hints": false,
-        "enabled": true
-      }
+        "enabled": true,
+      },
     },
     "Templ": {
       "formatter": "language_server",
       "format_on_save": "on",
       "use_autoclose": false,
-      "language_servers": [
-        "templ",
-        "tailwindcss-language-server"
-      ],
+      "language_servers": ["templ", "tailwindcss-language-server"],
       "jsx_tag_auto_close": {
-        "enabled": true
-      }
+        "enabled": true,
+      },
     },
     "Swift": {
       "hard_tabs": true,
-      "formatter": {
-        "external": {
-          "command": "swift-format"
-        }
-      },
       "inlay_hints": {
         "show_background": true,
         "show_parameter_hints": false,
         "show_other_hints": false,
-        "enabled": true
-      }
+        "enabled": true,
+      },
     },
     "Rust": {
       "inlay_hints": {
         "show_background": true,
         "show_parameter_hints": false,
         "show_other_hints": false,
-        "enabled": true
-      }
+        "enabled": true,
+      },
     },
   },
   "lsp": {
@@ -264,16 +279,16 @@
       "settings": {
         "typescript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
+            "enabled": "always",
+          },
         },
         "javascript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
-        }
+            "enabled": "always",
+          },
+        },
       },
-      "enable_lsp_tasks": true
+      "enable_lsp_tasks": true,
     },
     "golangci-lint": {
       "initialization_options": {
@@ -283,16 +298,16 @@
           "--output.json.path",
           "stdout",
           "--show-stats=false",
-          "--output.text.path="
-        ]
-      }
+          "--output.text.path=",
+        ],
+      },
     },
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
-          "templ": "html"
-        }
-      }
+          "templ": "html",
+        },
+      },
     },
     "vscode-html-language-server": {
       "settings": {
@@ -300,29 +315,29 @@
           "suggest": {
             "html5": true,
             "angular1": true,
-            "ionic": true
+            "ionic": true,
           },
           "validate": {
             "scripts": true,
-            "styles": true
+            "styles": true,
           },
           "format": {
             "wrapLineLength": 120,
-            "unformatted": "wbr,code,pre"
+            "unformatted": "wbr,code,pre",
           },
           "includeLanguages": {
             "templ": "html",
-            "Templ": "html"
-          }
-        }
-      }
+            "Templ": "html",
+          },
+        },
+      },
     },
     "rust-analyzer": {
       "initialization_options": {
         "check": {
-          "command": "clippy"
-        }
-      }
-    }
-  }
+          "command": "clippy",
+        },
+      },
+    },
+  },
 }
