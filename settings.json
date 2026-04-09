@@ -7,19 +7,43 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "gutter": {},
+  "minimap": {
+    "show": "always",
+    "max_width_columns": 80,
+    "display_in": "active_editor",
+    "thumb": "always",
+  },
+  "show_completion_documentation": false,
+  "show_completions_on_input": false,
+  "hover_popover_enabled": false,
+  "hover_popover_delay": 300,
+  "document_symbols": "on",
+  "buffer_font_weight": 500.0,
+  "git_panel": {
+    "dock": "right",
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "favorite_config_option_values": {
+        "mode": ["plan", "dontAsk"],
+      },
+      "type": "registry",
+    },
+  },
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000
-    }
+      "milliseconds": 1000,
+    },
   },
   "text_rendering_mode": "platform_default",
   "which_key": {
     "enabled": true,
   },
-  "disable_ai": true,
+  "disable_ai": false,
   "document_folding_ranges": "on",
   "edit_predictions": {
-    "provider": "zed",
+    "provider": "copilot",
     "disabled_globs": [".env.*", "!.env.example"],
   },
   "enable_language_server": true,
@@ -60,7 +84,7 @@
       "provider": "zed.dev",
       "model": "claude-opus-4-5",
     },
-    "dock": "left",
+    "dock": "right",
     "button": true,
     "enabled": true,
   },
@@ -110,15 +134,15 @@
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
   "buffer_font_family": "IoskeleyMono Nerd Font",
-  "buffer_line_height": "comfortable",
+  "buffer_line_height": "standard",
   "ui_font_family": ".ZedSans",
   "ui_font_weight": 500,
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "launchpad",
   "preview_tabs": {
-    "enabled": true
+    "enabled": true,
   },
-  "vim_mode": false,
+  "vim_mode": true,
   "vim": {
     "toggle_relative_line_numbers": true,
   },
@@ -130,6 +154,12 @@
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false,
+    "toggle_on_modifiers_press": {
+      "alt": true,
+    },
+    "show_background": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
   },
   "terminal": {
     "toolbar": {
@@ -175,14 +205,13 @@
     "make": true,
     "nord": true,
     "package-swift-lsp": true,
-    "poimandres": true,
+    "prisma": true,
     "ruby": true,
     "svelte": true,
     "swift": true,
     "templ": true,
     "toml": true,
     "vscode-icons": true,
-    "zedokai": true,
   },
   "diagnostics": {
     "include_warnings": true,
@@ -213,8 +242,7 @@
         "allowed": true,
       },
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
+        "source.fixAll.eslint": true,
       },
     },
     "Shell Script": {
@@ -224,15 +252,13 @@
         },
       },
     },
-    "Svelte": {},
+    "Svelte": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
     "Go": {
       "language_servers": ["gopls", "golangci-lint"],
-      "inlay_hints": {
-        "show_background": true,
-        "show_parameter_hints": false,
-        "show_other_hints": false,
-        "enabled": true,
-      },
     },
     "Templ": {
       "formatter": "language_server",
@@ -245,20 +271,6 @@
     },
     "Swift": {
       "hard_tabs": true,
-      "inlay_hints": {
-        "show_background": true,
-        "show_parameter_hints": false,
-        "show_other_hints": false,
-        "enabled": true,
-      },
-    },
-    "Rust": {
-      "inlay_hints": {
-        "show_background": true,
-        "show_parameter_hints": false,
-        "show_other_hints": false,
-        "enabled": true,
-      },
     },
   },
   "lsp": {
@@ -268,10 +280,16 @@
           "updateImportsOnFileMove": {
             "enabled": "always",
           },
+          "tsserver": {
+            "maxTsServerMemory": 24576,
+          },
         },
         "javascript": {
           "updateImportsOnFileMove": {
             "enabled": "always",
+          },
+          "tsserver": {
+            "maxTsServerMemory": 24576,
           },
         },
       },

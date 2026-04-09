@@ -6,14 +6,38 @@
     "label": "LazyGit",
     "command": "lazygit",
     "shell": {
-      "program": "sh"
+      "program": "sh",
     },
     "hide": "on_success",
     "reveal_target": "center",
     "show_summary": false,
     "show_command": false,
     "allow_concurrent_runs": false,
-    "use_new_terminal": false
+    "use_new_terminal": false,
+  },
+  {
+    "label": "Zed Config: Install script dependencies",
+    "command": "./scripts/install-dependencies.sh",
+    "cwd": "~/.config/zed",
+    "show_command": false,
+    "show_summary": false,
+    "hide": "on_success",
+  },
+  {
+    "label": "Zed Config: Open config directory",
+    "command": "bun run ./scripts/open-zed-config.ts",
+    "cwd": "~/.config/zed",
+    "show_command": false,
+    "show_summary": false,
+    "hide": "on_success",
+  },
+  {
+    "label": "Zed Config: Open config directory in Zed",
+    "command": "bun run ./scripts/open-zed-settings.ts",
+    "cwd": "~/.config/zed",
+    "show_command": false,
+    "show_summary": false,
+    "hide": "on_success",
   },
   {
     "label": "Zed Config: Check for update",
@@ -21,7 +45,7 @@
     "cwd": "~/.config/zed",
     "reveal_target": "center",
     "allow_concurrent_runs": false,
-    "use_new_terminal": true
+    "use_new_terminal": true,
   },
   {
     "label": "Zed Config: Update local from remote",
@@ -30,7 +54,7 @@
     "hide": "on_success",
     "reveal_target": "center",
     "allow_concurrent_runs": false,
-    "use_new_terminal": true
+    "use_new_terminal": true,
   },
   {
     "label": "Zed Config: Update remote from local",
@@ -39,6 +63,6 @@
     "hide": "on_success",
     "reveal_target": "center",
     "allow_concurrent_runs": false,
-    "use_new_terminal": true
-  }
+    "use_new_terminal": true,
+  },
 ]
