@@ -6,4 +6,18 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-  ]
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "j": ["workspace::SendKeystrokes", "j z z"],
+      "k": ["workspace::SendKeystrokes", "k z z"],
+    },
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "j": ["workspace::SendKeystrokes", "j z z"],
+      "k": ["workspace::SendKeystrokes", "k z z"],
+    },
+  },
+]
