@@ -7,6 +7,9 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "focus_follows_mouse": {
+    "enabled": true,
+  },
   "snippet_sort_order": "bottom",
   "active_pane_modifiers": {
     "border_size": -1.0,
@@ -18,9 +21,6 @@
     "show_active_file": true,
     "active_encoding_button": "enabled",
   },
-  "notification_panel": {
-    "show_count_badge": true,
-  },
   "gutter": {},
   "minimap": {
     "show": "always",
@@ -30,7 +30,7 @@
   },
   "show_completion_documentation": false,
   "show_completions_on_input": false,
-  "hover_popover_enabled": false,
+  "hover_popover_enabled": true,
   "hover_popover_delay": 300,
   "document_symbols": "on",
   "buffer_font_weight": 500.0,
@@ -98,9 +98,14 @@
   },
   "confirm_quit": true,
   "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "claude-haiku-4.5",
+      "enable_thinking": false,
+    },
     "use_modifier_to_send": true,
     "notify_when_agent_waiting": "all_screens",
-    "play_sound_when_agent_done": true,
+    "play_sound_when_agent_done": "always",
     "tool_permissions": {
       "default": "allow",
     },
@@ -112,11 +117,7 @@
     "button": true,
     "enabled": true,
   },
-  "icon_theme": {
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha",
-    "mode": "system",
-  },
+  "icon_theme": "VSCode Icons for Zed (Dark Official Icons)",
   "outline_panel": {
     "dock": "left",
   },
@@ -167,11 +168,7 @@
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
   },
-  "theme": {
-    "dark": "Catppuccin Mocha",
-    "light": "Catppuccin Latte",
-    "mode": "system",
-  },
+  "theme": "ultraViolet",
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false,
@@ -234,6 +231,7 @@
     "templ": true,
     "toml": true,
     "vscode-icons": true,
+    "ultraviolet-theme": true,
   },
   "diagnostics": {
     "include_warnings": true,
