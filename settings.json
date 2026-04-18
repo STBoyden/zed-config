@@ -7,6 +7,7 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "completion_menu_scrollbar": "auto",
   "focus_follows_mouse": {
     "enabled": true,
   },
@@ -28,8 +29,8 @@
     "display_in": "active_editor",
     "thumb": "always",
   },
-  "show_completion_documentation": false,
-  "show_completions_on_input": false,
+  "show_completion_documentation": true,
+  "show_completions_on_input": true,
   "hover_popover_enabled": true,
   "hover_popover_delay": 300,
   "document_symbols": "on",
@@ -44,6 +45,14 @@
     "dock": "right",
   },
   "agent_servers": {
+    "github-copilot-cli": {
+      "favorite_config_option_values": {
+        "mode": [
+          "https://agentclientprotocol.com/protocol/session-modes#autopilot"
+        ]
+      },
+      "type": "registry"
+    },
     "claude-acp": {
       "favorite_config_option_values": {
         "mode": ["plan", "dontAsk"],
@@ -84,7 +93,7 @@
     "allowed": true,
   },
   "show_signature_help_after_edits": true,
-  "auto_signature_help": false,
+  "auto_signature_help": true,
   "tabs": {
     "close_position": "left",
     "show_diagnostics": "all",
