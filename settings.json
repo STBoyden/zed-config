@@ -7,6 +7,9 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "collaboration_panel": {
+    "dock": "right",
+  },
   "completion_menu_scrollbar": "auto",
   "focus_follows_mouse": {
     "enabled": true,
@@ -24,7 +27,7 @@
   },
   "gutter": {},
   "minimap": {
-    "show": "always",
+    "show": "never",
     "max_width_columns": 80,
     "display_in": "active_editor",
     "thumb": "always",
@@ -47,11 +50,9 @@
   "agent_servers": {
     "github-copilot-cli": {
       "favorite_config_option_values": {
-        "mode": [
-          "https://agentclientprotocol.com/protocol/session-modes#autopilot"
-        ]
+        "mode": ["https://agentclientprotocol.com/protocol/session-modes#autopilot"],
       },
-      "type": "registry"
+      "type": "registry",
     },
     "claude-acp": {
       "favorite_config_option_values": {
@@ -101,8 +102,8 @@
     "git_status": true,
   },
   "title_bar": {
+    "show_branch_status_icon": true,
     "button_layout": "platform_default",
-    "show_branch_icon": true,
     "show_menus": true,
   },
   "confirm_quit": true,
@@ -122,13 +123,13 @@
       "provider": "zed.dev",
       "model": "claude-opus-4-5",
     },
-    "dock": "right",
+    "dock": "left",
     "button": true,
     "enabled": true,
   },
   "icon_theme": "VSCode Icons for Zed (Dark Official Icons)",
   "outline_panel": {
-    "dock": "left",
+    "dock": "right",
   },
   "tab_bar": {
     "show_pinned_tabs_in_separate_row": true,
@@ -232,6 +233,7 @@
     "log": true,
     "make": true,
     "nord": true,
+    "oxc": true,
     "package-swift-lsp": true,
     "prisma": true,
     "ruby": true,
@@ -239,8 +241,9 @@
     "swift": true,
     "templ": true,
     "toml": true,
-    "vscode-icons": true,
+    "tsgo": true,
     "ultraviolet-theme": true,
+    "vscode-icons": true,
   },
   "diagnostics": {
     "include_warnings": true,
