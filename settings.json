@@ -7,7 +7,6 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
-  "proxy": "",
   "git": {
     "inline_blame": {
       "show_commit_summary": true,
@@ -122,12 +121,6 @@
   },
   "confirm_quit": true,
   "agent": {
-    "default_model": {
-      "provider": "opencode",
-      "model": "minimax-m2.5-free",
-      "enable_thinking": false
-    },
-    "default_profile": "ask",
     "show_turn_stats": true,
     "new_thread_location": "new_worktree",
     "thinking_display": "preview",
@@ -136,6 +129,14 @@
     "play_sound_when_agent_done": "when_hidden",
     "tool_permissions": {
       "default": "allow",
+    },
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "zeta",
+    },
+    "commit_message_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o",
     },
     "dock": "left",
     "button": true,
