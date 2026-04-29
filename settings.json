@@ -7,6 +7,12 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "proxy": "",
+  "git": {
+    "inline_blame": {
+      "show_commit_summary": true,
+    },
+  },
   "collaboration_panel": {
     "dock": "right",
   },
@@ -48,6 +54,13 @@
     "dock": "right",
   },
   "agent_servers": {
+    "codex-acp": {
+      "default_config_options": {
+        "mode": "full-access",
+        "model": "gpt-5.4",
+      },
+      "type": "registry",
+    },
     "github-copilot-cli": {
       "favorite_config_option_values": {
         "mode": ["https://agentclientprotocol.com/protocol/session-modes#autopilot"],
@@ -73,7 +86,8 @@
   "disable_ai": false,
   "document_folding_ranges": "on",
   "edit_predictions": {
-    "provider": "copilot",
+    "mode": "eager",
+    "provider": "zed",
     "disabled_globs": [".env.*", "!.env.example"],
   },
   "enable_language_server": true,
@@ -108,26 +122,30 @@
   },
   "confirm_quit": true,
   "agent": {
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "claude-haiku-4.5",
-      "enable_thinking": false,
+    "default_model": {
+      "provider": "opencode",
+      "model": "minimax-m2.5-free",
+      "enable_thinking": false
     },
+    "default_profile": "ask",
+    "show_turn_stats": true,
+    "new_thread_location": "new_worktree",
+    "thinking_display": "preview",
     "use_modifier_to_send": true,
     "notify_when_agent_waiting": "all_screens",
-    "play_sound_when_agent_done": "always",
+    "play_sound_when_agent_done": "when_hidden",
     "tool_permissions": {
       "default": "allow",
-    },
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-opus-4-5",
     },
     "dock": "left",
     "button": true,
     "enabled": true,
   },
-  "icon_theme": "VSCode Icons for Zed (Dark Official Icons)",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
+  },
   "outline_panel": {
     "dock": "right",
   },
@@ -178,7 +196,7 @@
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
   },
-  "theme": "ultraViolet",
+  "theme": { "dark": "GitHub Dark", "light": "GitHub Light", "mode": "system" },
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false,
@@ -225,6 +243,7 @@
     "docker-compose": true,
     "dockerfile": true,
     "git-firefly": true,
+    "github-theme": true,
     "golangci-lint": true,
     "gosum": true,
     "html": true,
