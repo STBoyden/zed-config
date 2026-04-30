@@ -222,6 +222,10 @@
   },
   "vim_mode": true,
   "vim": {
+    "cursor_shape": {
+      "normal": "underline",
+      "replace": "hollow"
+    },
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
   },
