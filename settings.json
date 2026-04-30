@@ -7,6 +7,7 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "diff_view_style": "unified",
   "git": {
     "inline_blame": {
       "show_commit_summary": true,
@@ -42,7 +43,6 @@
   "hover_popover_enabled": true,
   "hover_popover_delay": 300,
   "document_symbols": "on",
-  "buffer_font_weight": 500.0,
   "git_panel": {
     "show_count_badge": true,
     "file_icons": true,
@@ -67,6 +67,9 @@
       "type": "registry",
     },
     "claude-acp": {
+      "default_config_options": {
+        "mode": "bypassPermissions",
+      },
       "favorite_config_option_values": {
         "mode": ["plan", "dontAsk"],
       },
@@ -166,7 +169,7 @@
       "show": "auto",
       "horizontal_scroll": true,
     },
-    "bold_folder_labels": true,
+    "bold_folder_labels": false,
     "auto_fold_dirs": true,
     "auto_reveal_entries": true,
     "folder_icons": true,
@@ -181,10 +184,35 @@
   "use_autoclose": true,
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
-  "buffer_font_family": "IoskeleyMono Nerd Font",
+  "buffer_font_family": "Monaspace Neon NF",
   "buffer_line_height": "standard",
-  "ui_font_family": ".ZedSans",
-  "ui_font_weight": 500,
+  "buffer_font_features": {
+    "calt": true, // texture healing
+    "liga": true, // // /// //// || ||| ||||
+    "ss01": true, // != ===
+    "ss02": true, // <= >=
+    "ss03": true, // ~> ->
+    "ss04": true, // </ /> </>
+    "ss05": true, // |> <| <|>
+    "ss06": true, // ## ++ __ == &&
+    "ss07": true, // :: =:=
+    "ss08": true, // ..= .-
+    "ss09": true, // <=> >> =<<
+    "ss10": true, // #[ ]# #( )#
+    "cv01": 2, // slashed: 0
+    "cv10": true, // l, i with serif
+    "cv30": true, // top-aligned: *
+    "cv31": true, // six-point: *
+    "cv32": true, // angled: <= >=
+    "cv62": true, // @_
+  },
+  "experimental.theme_overrides": {
+    "syntax": {
+      "comment": {
+        "font_style": "italic",
+      },
+    },
+  },
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "launchpad",
   "preview_tabs": {
@@ -213,8 +241,27 @@
     "toolbar": {
       "breadcrumbs": false,
     },
-    "font_family": "IoskeleyMono Nerd Font",
-    "font_fallbacks": ["Cascadia Code NF"],
+    "font_family": "Monaspace Neon NF",
+    "font_features": {
+      "calt": true, // texture healing
+      "liga": true, // // /// //// || ||| ||||
+      "ss01": true, // != ===
+      "ss02": true, // <= >=
+      "ss03": true, // ~> ->
+      "ss04": true, // </ /> </>
+      "ss05": true, // |> <| <|>
+      "ss06": true, // ## ++ __ == &&
+      "ss07": true, // :: =:=
+      "ss08": true, // ..= .-
+      "ss09": true, // <=> >> =<<
+      "ss10": true, // #[ ]# #( )#
+      "cv01": 2, // slashed: 0
+      "cv10": true, // l, i with serif
+      "cv30": true, // top-aligned: *
+      "cv31": true, // six-point: *
+      "cv32": true, // angled: <= >=
+      "cv62": true, // @_
+    },
     "font_size": 16,
     "env": {
       "EDITOR": "zed --wait",
@@ -283,19 +330,25 @@
     },
     "TSX": {
       "prettier": {
-        "allowed": true,
+        "allowed": false,
       },
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true,
-      },
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.oxc" },
+        { "language_server": { "name": "oxfmt" } },
+      ],
+      "language_servers": ["tsgo", "!effect-tsgo", "oxlint", "oxfmt", "!vtsls"],
     },
     "TypeScript": {
       "prettier": {
-        "allowed": true,
+        "allowed": false,
       },
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true,
-      },
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.oxc" },
+        { "language_server": { "name": "oxfmt" } },
+      ],
+      "language_servers": ["tsgo", "!effect-tsgo", "oxlint", "oxfmt", "!vtsls"],
     },
     "Shell Script": {
       "formatter": {

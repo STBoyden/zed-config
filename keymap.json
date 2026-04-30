@@ -20,4 +20,10 @@
       "k": ["workspace::SendKeystrokes", "k z z"],
     },
   },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-t": "workspace::NewCenterTerminal"
+    }
+  }
 ]
