@@ -229,7 +229,7 @@
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
   },
-  "theme": { "dark": "GitHub Dark", "light": "GitHub Light", "mode": "system" },
+  "theme": { "dark": "ultraViolet Blur", "light": "ultraViolet Light Blur", "mode": "system" },
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false,
