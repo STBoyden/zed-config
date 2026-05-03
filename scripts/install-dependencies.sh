@@ -4,5 +4,9 @@ echo "Installing bun..."
 
 curl -fsSL https://bun.sh/install | bash
 
-echo "\nInstalling fonts..."
+echo -e "\nInitialising git repository in ./zed-ultraViolet..."
+
+(cd ./zed-ultraViolet && git init)
+
+echo -e "\nInstalling fonts..."
 ./scripts/install-fonts.sh
