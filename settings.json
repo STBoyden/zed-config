@@ -225,7 +225,7 @@
   "vim": {
     "cursor_shape": {
       "normal": "underline",
-      "replace": "hollow"
+      "replace": "hollow",
     },
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
@@ -368,7 +368,12 @@
       },
     },
     "Go": {
+      "format_on_save": "on",
       "language_servers": ["gopls", "golangci-lint"],
+      "formatter": [
+        "language_server",
+        { "external": { "command": "golangci-lint", "arguments": ["fmt", "--stdin"] } },
+      ],
     },
     "Templ": {
       "formatter": "language_server",
