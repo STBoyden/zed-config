@@ -7,6 +7,14 @@ tag="[UPDATE LOCAL]"
 has_local_changes=false
 branch="state-of-config-$(date "+%Y-%m-%d_%H-%M-%S")"
 
+current_remote=$(git remote get-url origin)
+if [ "$current_remote" != "ssh://git@codeberg.org/STBoyden/zed-config.zed" ]; then
+    echo "$tag Remote is not set to Codeberg - migrating..."
+    git remote set-url origin "ssh://git@codeberg.org/STBoyden/zed-config.zed"
+else
+    echo "$tag Remote is already set to Codeberg - skipping migration."
+fi
+
 case $code in
 	1)
 	    git switch -c "$branch"
