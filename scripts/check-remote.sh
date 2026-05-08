@@ -8,7 +8,7 @@ new_origin="ssh://git@codeberg.org/STBoyden/zed-config.git"
 if [ "$current_remote" != "$new_origin" ]; then
     echo "$tag Remote is not set to Codeberg - migrating..."
     git remote set-url origin "$new_origin" || git remote add origin "$new_origin"
-    git fetch || exit 1
+    git pull origin main || exit 1
 else
     echo "$tag Remote is already set to Codeberg - skipping migration."
 fi
@@ -34,6 +34,7 @@ case "$status" in
 		;;
 
 	*)
+	  echo "$tag Unknown status: $status"
 		exit 127
 		;;
 esac
