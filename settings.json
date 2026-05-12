@@ -16,7 +16,7 @@
   "autoscroll_on_clicks": true,
   "helix_mode": false,
   "cli_default_open_behavior": "existing_window",
-  "diff_view_style": "unified",
+  "diff_view_style": "split",
   "git": {
     "inline_blame": {
       "show_commit_summary": true,
@@ -137,7 +137,6 @@
       {
         "provider": "opencode",
         "model": "free/minimax-m2.5-free",
-        "enable_thinking": false,
       },
     ],
     "show_turn_stats": true,
@@ -150,13 +149,12 @@
       "default": "allow",
     },
     "default_model": {
-      "enable_thinking": false,
       "provider": "opencode",
       "model": "free/minimax-m2.5-free",
     },
     "commit_message_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o",
+      "provider": "opencode",
+      "model": "free/minimax-m2.5-free",
     },
     "dock": "left",
     "button": true,
