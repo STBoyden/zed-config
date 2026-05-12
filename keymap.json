@@ -7,6 +7,13 @@
 // from the command palette.
 [
   {
+    "context": "!Editor && VimControl",
+    "bindings": {
+      "j": ["workspace::SendKeystrokes", "g j"],
+      "k": ["workspace::SendKeystrokes", "g k"],
+    },
+  },
+  {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "j": ["workspace::SendKeystrokes", "j z z"],
@@ -23,58 +30,58 @@
   {
     "context": "Workspace",
     "unbind": {
-      "ctrl-`": "terminal_panel::Toggle"
-    }
+      "ctrl-`": "terminal_panel::Toggle",
+    },
   },
   {
     "context": "Workspace",
-      "bindings": {
-      "ctrl-alt-cmd-}": "multi_workspace::NextProject"
-    }
+    "bindings": {
+      "ctrl-alt-cmd-}": "multi_workspace::NextProject",
+    },
   },
   {
     "context": "ThreadsSidebar && !Editor",
     "unbind": {
-      "] p": "multi_workspace::NextProject"
-    }
+      "] p": "multi_workspace::NextProject",
+    },
   },
   {
     "context": "Workspace",
-      "bindings": {
-      "ctrl-alt-cmd-{": "multi_workspace::PreviousProject"
-    }
+    "bindings": {
+      "ctrl-alt-cmd-{": "multi_workspace::PreviousProject",
+    },
   },
   {
     "context": "ThreadsSidebar && !Editor",
     "unbind": {
-      "[ p": "multi_workspace::PreviousProject"
-    }
+      "[ p": "multi_workspace::PreviousProject",
+    },
   },
   {
     "bindings": {
-      "alt-t": "terminal_panel::ToggleFocus"
-    }
+      "alt-t": "terminal_panel::ToggleFocus",
+    },
   },
   {
     "context": "Editor",
     "unbind": {
-      "cmd-]": "editor::Indent"
-    }
+      "cmd-]": "editor::Indent",
+    },
   },
   {
     "bindings": {
-      "cmd-}": "panel::NextPanelTab"
-    }
+      "cmd-}": "panel::NextPanelTab",
+    },
   },
   {
     "bindings": {
-      "cmd-{": "panel::PreviousPanelTab"
-    }
+      "cmd-{": "panel::PreviousPanelTab",
+    },
   },
   {
     "context": "Editor",
     "unbind": {
-      "cmd-[": "editor::Outdent"
-    }
-  }
+      "cmd-[": "editor::Outdent",
+    },
+  },
 ]
