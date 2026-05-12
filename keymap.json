@@ -54,5 +54,27 @@
     "bindings": {
       "alt-t": "terminal_panel::ToggleFocus"
     }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "cmd-]": "editor::Indent"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-}": "panel::NextPanelTab"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-{": "panel::PreviousPanelTab"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "cmd-[": "editor::Outdent"
+    }
   }
 ]
