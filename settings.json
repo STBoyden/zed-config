@@ -200,7 +200,7 @@
   "use_autoclose": true,
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
-  "buffer_font_family": "Monaspace Argon NF",
+  "buffer_font_family": "Monaspace Xenon NF",
   "buffer_line_height": "standard",
   "buffer_font_features": {
     "calt": true, // texture healing
@@ -264,7 +264,7 @@
     "toolbar": {
       "breadcrumbs": false,
     },
-    "font_family": "Monaspace Argon NF",
+    "font_family": "Monaspace Xenon NF",
     "font_features": {
       "calt": true, // texture healing
       "liga": true, // // /// //// || ||| ||||
