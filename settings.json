@@ -348,6 +348,10 @@
         "allowed": false,
       },
     },
+    "Rust": {
+      "format_on_save": "on",
+      "formatter": "language_server",
+    },
     "TSX": {
       "prettier": {
         "allowed": false,
