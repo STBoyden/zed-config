@@ -215,8 +215,10 @@
     "ss08": true, // ..= .-
     "ss09": true, // <=> >> =<<
     "ss10": true, // #[ ]# #( )#
-    "cv01": 2, // slashed: 0
-    "cv10": true, // l, i with serif
+    "cv01": 2, // (1) plain, (2) slashed, (3) reverse slashed, (4) cut-out slash: 0
+    "cv02": false, //  no serif: 1
+    "cv10": true, // l i alternates (Neon, Argon, Xenon, Radon)
+    "cv11": false, // j f r t alternates (Neon/Argon)
     "cv30": true, // top-aligned: *
     "cv31": true, // six-point: *
     "cv32": true, // angled: <= >=
@@ -276,8 +278,10 @@
       "ss08": true, // ..= .-
       "ss09": true, // <=> >> =<<
       "ss10": true, // #[ ]# #( )#
-      "cv01": 2, // slashed: 0
-      "cv10": true, // l, i with serif
+      "cv01": 2, // (1) plain, (2) slashed, (3) reverse slashed, (4) cut-out slash: 0
+      "cv02": false, //  no serif: 1
+      "cv10": true, // l i alternates (Neon, Argon, Xenon, Radon)
+      "cv11": false, // j f r t alternates (Neon/Argon)
       "cv30": true, // top-aligned: *
       "cv31": true, // six-point: *
       "cv32": true, // angled: <= >=
