@@ -7,6 +7,7 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "ui_font_family": ".SystemUIFont",
   "language_models": {
     "opencode": {
       "show_zen_models": false,
@@ -163,7 +164,7 @@
   "icon_theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha",
+    "dark": "Catppuccin Frappé",
   },
   "outline_panel": {
     "dock": "left",
@@ -199,7 +200,7 @@
   "use_autoclose": true,
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
-  "buffer_font_family": "Monaspace Neon NF",
+  "buffer_font_family": "Monaspace Argon NF",
   "buffer_line_height": "standard",
   "buffer_font_features": {
     "calt": true, // texture healing
@@ -244,7 +245,7 @@
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
   },
-  "theme": { "dark": "GitHub Dark", "light": "GitHub Light", "mode": "system" },
+  "theme": { "dark": "Vercel Dark", "light": "Vercel Light", "mode": "system" },
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false,
@@ -261,7 +262,7 @@
     "toolbar": {
       "breadcrumbs": false,
     },
-    "font_family": "Monaspace Neon NF",
+    "font_family": "Monaspace Argon NF",
     "font_features": {
       "calt": true, // texture healing
       "liga": true, // // /// //// || ||| ||||
@@ -311,6 +312,7 @@
     "docker-compose": true,
     "dockerfile": true,
     "git-firefly": true,
+    "github-classic": true,
     "github-theme": true,
     "golangci-lint": true,
     "gosum": true,
@@ -330,6 +332,7 @@
     "toml": true,
     "tsgo": true,
     "ultraviolet-theme": true,
+    "vercel-theme": true,
     "vscode-icons": true,
   },
   "diagnostics": {
