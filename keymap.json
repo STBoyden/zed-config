@@ -7,24 +7,21 @@
 // from the command palette.
 [
   {
-    "context": "!Editor && VimControl",
+    "context": "(CommitEditor || MessageEditor) > vim_mode == normal || vim_mode == visual",
     "bindings": {
-      "j": ["workspace::SendKeystrokes", "g j"],
-      "k": ["workspace::SendKeystrokes", "g k"],
+      "k": [
+        "workspace::SendKeystrokes",
+        "g k"
+      ],
     },
   },
   {
-    "context": "Editor && vim_mode == normal",
+    "context": "!AcpThread && Editor && (vim_mode == normal || vim_mode == visual)",
     "bindings": {
-      "j": ["workspace::SendKeystrokes", "j z z"],
-      "k": ["workspace::SendKeystrokes", "k z z"],
-    },
-  },
-  {
-    "context": "Editor && vim_mode == visual",
-    "bindings": {
-      "j": ["workspace::SendKeystrokes", "j z z"],
-      "k": ["workspace::SendKeystrokes", "k z z"],
+      "k": [
+        "workspace::SendKeystrokes",
+        "k z z"
+      ],
     },
   },
   {
@@ -84,4 +81,22 @@
       "cmd-[": "editor::Outdent",
     },
   },
+  {
+    "context": "(CommitEditor || MessageEditor) > vim_mode == normal || vim_mode == visual",
+    "bindings": {
+      "j": [
+        "workspace::SendKeystrokes",
+        "g j"
+      ]
+    }
+  },
+  {
+    "context": "!AcpThread && Editor && (vim_mode == normal || vim_mode == visual)",
+    "bindings": {
+      "j": [
+        "workspace::SendKeystrokes",
+        "j z z"
+      ]
+    }
+  }
 ]
