@@ -8,7 +8,7 @@
 // ctrl-shift-p)
 {
   "completion_menu_item_kind": "symbol",
-  "semantic_tokens": "full",
+  "semantic_tokens": "combined",
   "search": {
     "center_on_match": true,
     "include_ignored": false,
