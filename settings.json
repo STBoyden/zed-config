@@ -324,7 +324,7 @@
   },
   "relative_line_numbers": "disabled",
   "wrap_guides": [100],
-  "semantic_tokens": "combined",
+  "semantic_tokens": "off",
   "show_wrap_guides": false,
   "auto_install_extensions": {
     "basher": true,
