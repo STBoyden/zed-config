@@ -7,6 +7,15 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "search": {
+    "center_on_match": true,
+    "include_ignored": false,
+  },
+  "code_lens": "on",
+  "hard_tabs": false,
+  "toolbar": {
+    "code_actions": true,
+  },
   "context_servers": {
     "Xcode": {
       "enabled": true,
@@ -37,16 +46,17 @@
   },
   "completion_menu_scrollbar": "auto",
   "focus_follows_mouse": {
-    "enabled": true,
+    "enabled": false,
   },
   "snippet_sort_order": "bottom",
   "active_pane_modifiers": {
     "border_size": -1.0,
     "inactive_opacity": 1.0,
   },
-  "use_system_window_tabs": false,
+  "use_system_window_tabs": true,
   "bottom_dock_layout": "contained",
   "status_bar": {
+    "line_endings_button": true,
     "show_active_file": true,
     "active_encoding_button": "enabled",
   },
@@ -91,9 +101,7 @@
         "mode": "bypassPermissions",
       },
       "favorite_config_option_values": {
-        "mode": [
-          "bypassPermissions"
-        ],
+        "mode": ["bypassPermissions"],
       },
       "type": "registry",
     },
@@ -103,7 +111,6 @@
       "milliseconds": 1000,
     },
   },
-  "text_rendering_mode": "platform_default",
   "which_key": {
     "enabled": true,
   },
@@ -134,6 +141,7 @@
   "show_signature_help_after_edits": true,
   "auto_signature_help": true,
   "tabs": {
+    "show_close_button": "hover",
     "close_position": "left",
     "show_diagnostics": "all",
     "file_icons": true,
@@ -146,7 +154,6 @@
   },
   "confirm_quit": true,
   "agent": {
-    "new_thread_location": "new_worktree",
     "favorite_models": [
       {
         "provider": "opencode",
@@ -212,7 +219,7 @@
   "use_autoclose": true,
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
-  "buffer_font_family": "Monaspace Xenon NF",
+  "buffer_font_family": "Monaspace Krypton NF",
   "buffer_line_height": "standard",
   "buffer_font_features": {
     "calt": true, // texture healing
@@ -276,7 +283,7 @@
     "toolbar": {
       "breadcrumbs": false,
     },
-    "font_family": "Monaspace Xenon NF",
+    "font_family": "Monaspace Krypton NF",
     "font_features": {
       "calt": true, // texture healing
       "liga": true, // // /// //// || ||| ||||
