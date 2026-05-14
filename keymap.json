@@ -9,19 +9,13 @@
   {
     "context": "(CommitEditor || MessageEditor) > vim_mode == normal || vim_mode == visual",
     "bindings": {
-      "k": [
-        "workspace::SendKeystrokes",
-        "g k"
-      ],
+      "k": ["workspace::SendKeystrokes", "g k"],
     },
   },
   {
     "context": "!AcpThread && Editor && (vim_mode == normal || vim_mode == visual)",
     "bindings": {
-      "k": [
-        "workspace::SendKeystrokes",
-        "k z z"
-      ],
+      "k": ["workspace::SendKeystrokes", "k z z"],
     },
   },
   {
@@ -84,19 +78,25 @@
   {
     "context": "(CommitEditor || MessageEditor) > vim_mode == normal || vim_mode == visual",
     "bindings": {
-      "j": [
-        "workspace::SendKeystrokes",
-        "g j"
-      ]
-    }
+      "j": ["workspace::SendKeystrokes", "g j"],
+    },
   },
   {
     "context": "!AcpThread && Editor && (vim_mode == normal || vim_mode == visual)",
     "bindings": {
-      "j": [
-        "workspace::SendKeystrokes",
-        "j z z"
-      ]
-    }
-  }
+      "j": ["workspace::SendKeystrokes", "j z z"],
+    },
+  },
+  {
+    "context": "(vim_mode == normal || vim_mode == visual) && !menu",
+    "bindings": {
+      ", ,": "vim::HelixJumpToWord",
+    },
+  },
+  {
+    "context": "(vim_mode == helix_normal || vim_mode == helix_select) && !menu",
+    "unbind": {
+      "g w": "vim::HelixJumpToWord",
+    },
+  },
 ]

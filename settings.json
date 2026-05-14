@@ -7,6 +7,8 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "completion_menu_item_kind": "symbol",
+  "semantic_tokens": "full",
   "search": {
     "center_on_match": true,
     "include_ignored": false,
@@ -324,7 +326,6 @@
   },
   "relative_line_numbers": "disabled",
   "wrap_guides": [100],
-  "semantic_tokens": "full",
   "show_wrap_guides": false,
   "auto_install_extensions": {
     "basher": true,
@@ -417,7 +418,12 @@
       "language_servers": ["gopls", "golangci-lint"],
       "formatter": [
         "language_server",
-        { "external": { "command": "golangci-lint", "arguments": ["fmt", "--stdin"] } },
+        {
+          "external": {
+            "command": "golangci-lint",
+            "arguments": ["fmt", "--stdin"],
+          },
+        },
       ],
     },
     "Templ": {
@@ -431,6 +437,12 @@
     },
     "Swift": {
       "hard_tabs": true,
+    },
+    "JSON": {
+      "semantic_tokens": "off",
+    },
+    "JSONC": {
+      "semantic_tokens": "off",
     },
   },
   "lsp": {
