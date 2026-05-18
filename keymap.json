@@ -99,4 +99,11 @@
       "g w": "vim::HelixJumpToWord",
     },
   },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": "vim::SwitchToNormalMode",
+      "j k": "vim::SwitchToNormalMode",
+    },
+  },
 ]

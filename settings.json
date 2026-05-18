@@ -177,18 +177,18 @@
       "provider": "openai-subscribed",
       "model": "gpt-5.4-mini",
     },
-    "commit_message_model": {
-      "provider": "opencode",
-      "model": "free/minimax-m2.5-free",
-    },
+    // "commit_message_model": {
+    //   "provider": "opencode",
+    //   "model": "free/minimax-m2.5-free",
+    // },
     "dock": "left",
     "button": true,
     "enabled": true,
   },
   "icon_theme": {
-    "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Frappé",
+    "mode": "light",
+    "light": "Min Icons",
+    "dark": "Min Icons",
   },
   "outline_panel": {
     "dock": "left",
@@ -271,7 +271,7 @@
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
   },
-  "theme": { "dark": "Vercel Dark", "light": "Vercel Light", "mode": "system" },
+  "theme": { "dark": "Min Dark (Solid)", "light": "Min Light (Solid)", "mode": "dark" },
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false,
@@ -348,6 +348,7 @@
     "kotlin": true,
     "log": true,
     "make": true,
+    "min-theme": true,
     "nord": true,
     "oxc": true,
     "package-swift-lsp": true,
