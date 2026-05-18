@@ -106,4 +106,10 @@
       "j k": "vim::SwitchToNormalMode",
     },
   },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "alt-shift-m": "vim::ToggleMarksView"
+    }
+  }
 ]
