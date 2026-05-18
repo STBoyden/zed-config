@@ -271,7 +271,11 @@
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
   },
-  "theme": { "dark": "Min Dark (Solid)", "light": "Min Light (Solid)", "mode": "system" },
+  "theme": {
+    "dark": "Base16 Da One Gray",
+    "light": "Base16 Da One Paper",
+    "mode": "dark",
+  },
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false,
@@ -331,6 +335,7 @@
   "wrap_guides": [100],
   "show_wrap_guides": false,
   "auto_install_extensions": {
+    "base16": true,
     "basher": true,
     "cargo-appraiser": true,
     "catppuccin": true,
