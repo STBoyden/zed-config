@@ -156,6 +156,7 @@
   },
   "confirm_quit": true,
   "agent": {
+    "default_profile": "write",
     "favorite_models": [
       {
         "provider": "opencode",
@@ -171,8 +172,10 @@
       "default": "allow",
     },
     "default_model": {
-      "provider": "opencode",
-      "model": "free/minimax-m2.5-free",
+      "effort": "medium",
+      "enable_thinking": true,
+      "provider": "openai-subscribed",
+      "model": "gpt-5.4-mini",
     },
     "commit_message_model": {
       "provider": "opencode",
@@ -444,6 +447,14 @@
     "JSONC": {
       "semantic_tokens": "off",
     },
+    "Markdown": {
+      "wrap_guides": [80],
+      "show_wrap_guides": true,
+      "format_on_save": "on",
+      "allow_rewrap": "anywhere",
+      "use_on_type_format": true,
+      "formatter": "language_server",
+    },
   },
   "lsp": {
     "vtsls": {
@@ -513,6 +524,9 @@
       "initialization_options": {
         "check": {
           "command": "clippy",
+        },
+        "rustfmt": {
+          "extraArgs": ["+nightly"],
         },
       },
     },
