@@ -274,7 +274,7 @@
   "theme": {
     "dark": "Base16 Da One Gray",
     "light": "Base16 Da One Paper",
-    "mode": "dark",
+    "mode": "system",
   },
   "format_on_save": "on",
   "inlay_hints": {
