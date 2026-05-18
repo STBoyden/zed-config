@@ -66,6 +66,15 @@
     "use_new_terminal": true,
   },
   {
+    "label": "Zed Config: Update or clone journal",
+    "command": "./scripts/clone-journal.sh",
+    "cwd": "~/.config/zed",
+    "use_new_terminal": true,
+    "reveal": "no_focus",
+    "allow_concurrent_runs": false,
+    "hide": "on_success",
+  },
+  {
     "label": "New Worktree: Copy env files from main worktree",
     "command": "bash",
     "args": ["~/.config/zed/scripts/copy-env-files-to-worktree.sh"],
