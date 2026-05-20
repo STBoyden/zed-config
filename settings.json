@@ -273,7 +273,7 @@
   },
   "theme": {
     "dark": "Base16 Da One Gray",
-    "light": "Base16 Da One Paper",
+    "light": "Base16 Classic Light",
     "mode": "system",
   },
   "format_on_save": "on",
