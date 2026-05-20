@@ -278,8 +278,8 @@
     "toggle_relative_line_numbers": true,
   },
   "theme": {
-    "dark": "Base16 Gruvbox dark, hard",
-    "light": "Base16 Gruvbox light, hard",
+    "dark": "Gruvbox Dark Hard",
+    "light": "Gruvbox Light Hard",
     "mode": "system",
   },
   "format_on_save": "on",
