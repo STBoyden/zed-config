@@ -187,8 +187,8 @@
   },
   "icon_theme": {
     "mode": "system",
-    "light": "Min Icons",
-    "dark": "Min Icons",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
   },
   "outline_panel": {
     "dock": "left",
@@ -272,8 +272,8 @@
     "toggle_relative_line_numbers": true,
   },
   "theme": {
-    "dark": "Base16 Da One Gray",
-    "light": "Base16 Classic Light",
+    "dark": "Base16 Gruvbox dark, hard",
+    "light": "Base16 Gruvbox light, hard",
     "mode": "system",
   },
   "format_on_save": "on",
