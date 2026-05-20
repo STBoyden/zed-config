@@ -109,7 +109,16 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "alt-shift-m": "vim::ToggleMarksView"
-    }
-  }
+      "alt-shift-m": "vim::ToggleMarksView",
+    },
+  },
+  {
+    "context": "(Editor && (vim_mode == normal || vim_mode == visual)) || (VimControl && !menu)",
+    "bindings": {
+      "n": "vim::NextSubwordStart",
+      "N": "vim::NextSubwordEnd",
+      "m": "vim::PreviousSubwordStart",
+      "M": "vim::PreviousSubwordEnd",
+    },
+  },
 ]

@@ -114,6 +114,7 @@
     },
   },
   "which_key": {
+    "delay_ms": 100,
     "enabled": true,
   },
   "disable_ai": false,
