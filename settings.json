@@ -7,6 +7,9 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "debugger": {
+    "dock": "right",
+  },
   "completion_menu_item_kind": "symbol",
   "semantic_tokens": "combined",
   "search": {
@@ -226,29 +229,30 @@
   "use_autoclose": true,
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
-  "buffer_font_family": "Monaspace Argon NF",
+  "buffer_font_family": "FiraCode Nerd Font Mono",
   "buffer_line_height": "standard",
   "buffer_font_features": {
-    "calt": true, // texture healing
-    "liga": true, // // /// //// || ||| ||||
-    "ss01": true, // != ===
-    "ss02": true, // <= >=
-    "ss03": true, // ~> ->
-    "ss04": true, // </ /> </>
-    "ss05": true, // |> <| <|>
-    "ss06": true, // ## ++ __ == &&
-    "ss07": true, // :: =:=
-    "ss08": true, // ..= .-
-    "ss09": true, // <=> >> =<<
-    "ss10": true, // #[ ]# #( )#
-    "cv01": 2, // (1) plain, (2) slashed, (3) reverse slashed, (4) cut-out slash: 0
-    "cv02": false, //  no serif: 1
-    "cv10": true, // l i alternates (Neon, Argon, Xenon, Radon)
-    "cv11": false, // j f r t alternates (Neon/Argon)
-    "cv30": true, // top-aligned: *
-    "cv31": true, // six-point: *
-    "cv32": true, // angled: <= >=
-    "cv62": true, // @_
+    // for monaspace fonts
+    // "calt": true, // texture healing
+    // "liga": true, // // /// //// || ||| ||||
+    // "ss01": true, // != ===
+    // "ss02": true, // <= >=
+    // "ss03": true, // ~> ->
+    // "ss04": true, // </ /> </>
+    // "ss05": true, // |> <| <|>
+    // "ss06": true, // ## ++ __ == &&
+    // "ss07": true, // :: =:=
+    // "ss08": true, // ..= .-
+    // "ss09": true, // <=> >> =<<
+    // "ss10": true, // #[ ]# #( )#
+    // "cv01": 2, // (1) plain, (2) slashed, (3) reverse slashed, (4) cut-out slash: 0
+    // "cv02": false, //  no serif: 1
+    // "cv10": true, // l i alternates (Neon, Argon, Xenon, Radon)
+    // "cv11": false, // j f r t alternates (Neon/Argon)
+    // "cv30": true, // top-aligned: *
+    // "cv31": true, // six-point: *
+    // "cv32": true, // angled: <= >=
+    // "cv62": true, // @_
   },
   "experimental.theme_overrides": {
     "syntax": {
@@ -294,30 +298,31 @@
     "toolbar": {
       "breadcrumbs": false,
     },
-    "font_family": "Monaspace Argon NF",
+    "font_family": "FiraCode Nerd Font Mono",
     "font_features": {
-      "calt": true, // texture healing
-      "liga": true, // // /// //// || ||| ||||
-      "ss01": true, // != ===
-      "ss02": true, // <= >=
-      "ss03": true, // ~> ->
-      "ss04": true, // </ /> </>
-      "ss05": true, // |> <| <|>
-      "ss06": true, // ## ++ __ == &&
-      "ss07": true, // :: =:=
-      "ss08": true, // ..= .-
-      "ss09": true, // <=> >> =<<
-      "ss10": true, // #[ ]# #( )#
-      "cv01": 2, // (1) plain, (2) slashed, (3) reverse slashed, (4) cut-out slash: 0
-      "cv02": false, //  no serif: 1
-      "cv10": true, // l i alternates (Neon, Argon, Xenon, Radon)
-      "cv11": false, // j f r t alternates (Neon/Argon)
-      "cv30": true, // top-aligned: *
-      "cv31": true, // six-point: *
-      "cv32": true, // angled: <= >=
-      "cv62": true, // @_
+      // for monaspace fonts
+      // "calt": true, // texture healing
+      // "liga": true, // // /// //// || ||| ||||
+      // "ss01": true, // != ===
+      // "ss02": true, // <= >=
+      // "ss03": true, // ~> ->
+      // "ss04": true, // </ /> </>
+      // "ss05": true, // |> <| <|>
+      // "ss06": true, // ## ++ __ == &&
+      // "ss07": true, // :: =:=
+      // "ss08": true, // ..= .-
+      // "ss09": true, // <=> >> =<<
+      // "ss10": true, // #[ ]# #( )#
+      // "cv01": 2, // (1) plain, (2) slashed, (3) reverse slashed, (4) cut-out slash: 0
+      // "cv02": false, //  no serif: 1
+      // "cv10": true, // l i alternates (Neon, Argon, Xenon, Radon)
+      // "cv11": false, // j f r t alternates (Neon/Argon)
+      // "cv30": true, // top-aligned: *
+      // "cv31": true, // six-point: *
+      // "cv32": true, // angled: <= >=
+      // "cv62": true, // @_
     },
-    "font_size": 16,
+    "font_size": 15.0,
     "env": {
       "EDITOR": "zed --wait",
     },
