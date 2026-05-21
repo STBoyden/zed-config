@@ -7,6 +7,7 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "redact_private_values": false,
   "debugger": {
     "dock": "right",
   },
@@ -19,6 +20,10 @@
   "code_lens": "on",
   "hard_tabs": false,
   "toolbar": {
+    "agent_review": true,
+    "selections_menu": true,
+    "quick_actions": true,
+    "breadcrumbs": false,
     "code_actions": true,
   },
   "context_servers": {
@@ -40,7 +45,7 @@
   "autoscroll_on_clicks": true,
   "helix_mode": false,
   "cli_default_open_behavior": "existing_window",
-  "diff_view_style": "unified",
+  "diff_view_style": "split",
   "git": {
     "inline_blame": {
       "show_commit_summary": true,
@@ -160,6 +165,7 @@
   },
   "confirm_quit": true,
   "agent": {
+    "sidebar_side": "left",
     "default_profile": "write",
     "favorite_models": [
       {
