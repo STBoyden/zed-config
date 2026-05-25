@@ -25,7 +25,7 @@
   },
   {
     "label": "Zed Config: Open config directory",
-    "command": "bun run ./scripts/open-zed-config.ts",
+    "command": "nu ./scripts/open-zed-settings.nu",
     "cwd": "~/.config/zed",
     "show_command": false,
     "show_summary": false,
@@ -33,7 +33,7 @@
   },
   {
     "label": "Zed Config: Open config directory in Zed",
-    "command": "bun run ./scripts/open-zed-settings.ts",
+    "command": "nu ./scripts/open-zed-config.nu",
     "cwd": "~/.config/zed",
     "show_command": false,
     "show_summary": false,
