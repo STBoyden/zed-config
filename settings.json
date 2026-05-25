@@ -182,10 +182,10 @@
       "default": "allow",
     },
     "default_model": {
-      "effort": "medium",
+      "effort": "low",
       "enable_thinking": true,
       "provider": "openai-subscribed",
-      "model": "gpt-5.4-mini",
+      "model": "gpt-5.5",
     },
     // "commit_message_model": {
     //   "provider": "opencode",
@@ -213,7 +213,7 @@
     "right_padding": 0.05,
   },
   "project_panel": {
-    "hide_hidden": true,
+    "hide_hidden": false,
     "git_status_indicator": true,
     "diagnostic_badges": true,
     "scrollbar": {
@@ -299,6 +299,13 @@
     "show_other_hints": true,
   },
   "terminal": {
+    "shell": {
+      "with_arguments": {
+        "program": "nu",
+        "args": ["-l"],
+        "title_override": null,
+      },
+    },
     "dock": "right",
     "show_count_badge": true,
     "toolbar": {
