@@ -17,7 +17,7 @@
   },
   {
     "label": "Zed Config: Install script dependencies",
-    "command": "./scripts/install-dependencies.sh",
+    "command": "nu ./scripts/install-dependencies.nu",
     "cwd": "~/.config/zed",
     "show_command": false,
     "show_summary": false,
@@ -41,7 +41,7 @@
   },
   {
     "label": "Zed Config: Check for update",
-    "command": "./scripts/check-remote.sh",
+    "command": "nu ./scripts/check-remote.nu",
     "cwd": "~/.config/zed",
     "reveal_target": "center",
     "allow_concurrent_runs": false,
@@ -49,7 +49,7 @@
   },
   {
     "label": "Zed Config: Update local from remote",
-    "command": "./scripts/update-local.sh",
+    "command": "nu ./scripts/update-local.nu",
     "cwd": "~/.config/zed",
     "hide": "on_success",
     "reveal_target": "center",
@@ -58,7 +58,7 @@
   },
   {
     "label": "Zed Config: Update remote from local",
-    "command": "./scripts/update-remote.sh",
+    "command": "nu ./scripts/update-remote.nu",
     "cwd": "~/.config/zed",
     "hide": "on_success",
     "reveal_target": "center",
@@ -67,7 +67,7 @@
   },
   {
     "label": "Zed Config: Update or clone journal",
-    "command": "./scripts/clone-journal.sh",
+    "command": "nu ./scripts/clone-journal.nu",
     "cwd": "~/.config/zed",
     "use_new_terminal": true,
     "reveal": "no_focus",
@@ -76,16 +76,16 @@
   },
   {
     "label": "New Worktree: Copy env files from main worktree",
-    "command": "bash",
-    "args": ["~/.config/zed/scripts/copy-env-files-to-worktree.sh"],
+    "command": "nu",
+    "args": ["~/.config/zed/scripts/copy-env-files-to-worktree.nu"],
     "hooks": ["create_worktree"],
     "reveal": "no_focus",
     "hide": "on_success",
   },
   {
     "label": "New Worktree: Create branch for worktree",
-    "command": "bash",
-    "args": ["~/.config/zed/scripts/create-branch-for-worktree.sh"],
+    "command": "nu",
+    "args": ["~/.config/zed/scripts/create-branch-for-worktree.nu"],
     "hooks": ["create_worktree"],
     "reveal": "no_focus",
     "hide": "on_success",
