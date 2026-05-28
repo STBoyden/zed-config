@@ -28,7 +28,7 @@
   },
   "context_servers": {
     "Xcode": {
-      "enabled": true,
+      "enabled": false,
       "remote": false,
       "command": "xcrun",
       "args": ["mcpbridge"],
@@ -266,6 +266,12 @@
         "font_style": "italic",
       },
     },
+    "vim.replace.background": "#FB4833",
+    "vim.insert.background": "#83A598",
+    "vim.normal.background": "#D3869B",
+    "vim.visual.background": "#FE8B2E",
+    "vim.visual_line.background": "#B8BB25",
+    "vim.visual_block.background": "#FABD2E",
   },
   "unstable.ui_density": "comfortable",
   "restore_on_startup": "launchpad",

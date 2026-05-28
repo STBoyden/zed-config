@@ -49,6 +49,7 @@
     },
   },
   {
+    "context": "Workspace",
     "bindings": {
       "alt-t": "terminal_panel::ToggleFocus",
     },
