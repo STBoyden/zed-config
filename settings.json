@@ -266,6 +266,7 @@
         "font_style": "italic",
       },
     },
+    // gruvbox colours for the vim indicators
     "vim.replace.background": "#FB4833",
     "vim.insert.background": "#83A598",
     "vim.normal.background": "#D3869B",
