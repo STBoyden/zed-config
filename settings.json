@@ -35,7 +35,7 @@
       "env": {},
     },
   },
-  "ui_font_family": ".SystemUIFont",
+  "ui_font_family": "Avenir",
   "language_models": {
     "opencode": {
       "show_zen_models": false,
