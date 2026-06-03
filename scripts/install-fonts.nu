@@ -171,7 +171,7 @@ def linux [] {
   } catch {|err|
     log $log_tag $"Refreshing font cache failed: ($err.msg)"
   } finally {
-    # rm -rf $tmp_dir
+    rm -rf $tmp_dir
   }
 }
 
