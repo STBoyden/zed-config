@@ -35,7 +35,7 @@
       "env": {},
     },
   },
-  "ui_font_family": "Avenir",
+  "ui_font_family": "Noto Sans",
   "language_models": {
     "opencode": {
       "show_zen_models": false,
