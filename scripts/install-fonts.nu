@@ -16,8 +16,8 @@ def darwin [] {
     exit 1
   }
 
-  brew install --cask font-monaspace-nf font-fira-code-nerd-font
-  print "Monaspace & Fira Code Nerd Fonts installed"
+  brew install --cask font-monaspace-nf font-fira-code-nerd-font font-noto-sans
+  print "Fonts installed"
 }
 
 def linux [] {
@@ -123,35 +123,36 @@ def linux [] {
     $job_tag | job send 0 --tag $tag
   }
 
-  let avenir_job = job spawn {
-    let job_tag = $"($log_tag) Avenir"
+  # let avenir_job = job spawn {
+  #   let job_tag = $"($log_tag) Avenir"
 
-    try {
-      let archive = $tmp_dir | path join "Avenir.zip"
+  #   try {
+  #     let archive = $tmp_dir | path join "Avenir.zip"
 
-      log $job_tag "Downloading font archive"
-      ^curl -L --progress-bar -o $archive "https://github.com/platanus/fonts/archive/refs/heads/master.zip"
+  #     log $job_tag "Downloading font archive"
+  #     ^curl -L --progress-bar -o $archive "https://github.com/platanus/fonts/archive/refs/heads/master.zip"
 
-      log $job_tag "Extracting archive"
-      unzip -o $archive -d $tmp_dir
+  #     log $job_tag "Extracting archive"
+  #     unzip -o $archive -d $tmp_dir
 
-      mkdir $"($fonts_dir)/Avenir"
+  #     mkdir $"($fonts_dir)/Avenir"
 
-      log $job_tag "Installing Avenir ttf fonts"
-      cp ($"($tmp_dir)/fonts-*/Avenir/*.ttf" | into glob)  $"($fonts_dir)/Avenir/"
+  #     log $job_tag "Installing Avenir ttf fonts"
+  #     cp ($"($tmp_dir)/fonts-*/Avenir/*.ttf" | into glob)  $"($fonts_dir)/Avenir/"
 
-      log $job_tag "Cleaning up archive"
-      rm $archive
+  #     log $job_tag "Cleaning up archive"
+  #     rm $archive
 
-      log $job_tag "Done"
-    } catch {|err|
-      log $job_tag $"Failed: ($err.msg)"
-    }
+  #     log $job_tag "Done"
+  #   } catch {|err|
+  #     log $job_tag $"Failed: ($err.msg)"
+  #   }
 
-    $job_tag | job send 0 --tag $tag
-  }
+  #   $job_tag | job send 0 --tag $tag
+  # }
 
-  let download_jobs = [$fira_code_job $monaspace_job $avenir_job]
+  # let download_jobs = [$fira_code_job $monaspace_job $avenir_job]
+  let download_jobs = [$fira_code_job $monaspace_job]
 
   mut jobs = job list | where $it.id in $download_jobs
   loop {
@@ -168,6 +169,7 @@ def linux [] {
   try {
     log $log_tag "Refreshing font cache"
     ^fc-cache -f
+    log $log_tag "Fonts installed"
   } catch {|err|
     log $log_tag $"Refreshing font cache failed: ($err.msg)"
   } finally {
