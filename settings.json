@@ -377,6 +377,8 @@
     "golangci-lint": true,
     "gosum": true,
     "html": true,
+    "jetbrains-icons": true,
+    "jetbrains-themes": true,
     "just": true,
     "kotlin": true,
     "log": true,
