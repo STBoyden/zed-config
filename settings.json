@@ -7,6 +7,8 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "text_rendering_mode": "platform_default",
+  "proxy": "",
   "redact_private_values": false,
   "debugger": {
     "dock": "right",
@@ -23,7 +25,7 @@
     "agent_review": true,
     "selections_menu": true,
     "quick_actions": true,
-    "breadcrumbs": false,
+    "breadcrumbs": true,
     "code_actions": true,
   },
   "context_servers": {
@@ -128,7 +130,7 @@
   "disable_ai": false,
   "document_folding_ranges": "on",
   "edit_predictions": {
-    "mode": "eager",
+    "mode": "subtle",
     "provider": "zed",
     "disabled_globs": [".env.*", "!.env.example"],
   },
@@ -165,6 +167,7 @@
   },
   "confirm_quit": true,
   "agent": {
+    "terminal_init_command": "clear ; pi",
     "sidebar_side": "left",
     "default_profile": "write",
     "favorite_models": [
