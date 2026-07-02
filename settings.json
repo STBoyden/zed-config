@@ -37,7 +37,7 @@
       "env": {},
     },
   },
-  "ui_font_family": "Noto Sans",
+  "ui_font_family": "Helvetica",
   "language_models": {
     "opencode": {
       "show_zen_models": false,
@@ -143,7 +143,7 @@
   "sticky_scroll": {
     "enabled": false,
   },
-  "show_whitespaces": "all",
+  "show_whitespaces": "selection",
   "whitespace_map": {
     "tab": ">",
   },
@@ -198,11 +198,7 @@
     "button": true,
     "enabled": true,
   },
-  "icon_theme": {
-    "mode": "system",
-    "light": "JetBrains Icons Light",
-    "dark": "JetBrains Icons Dark",
-  },
+  "icon_theme": "Colored Zed Icons Theme Dark",
   "outline_panel": {
     "dock": "left",
   },
@@ -239,7 +235,7 @@
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
   "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_line_height": "standard",
+  "buffer_line_height": "comfortable",
   "buffer_font_features": {
     // for monaspace fonts
     // "calt": true, // texture healing
@@ -294,9 +290,9 @@
     "toggle_relative_line_numbers": true,
   },
   "theme": {
-    "dark": "JetBrains Islands Dark",
-    "light": "JetBrains Islands Light",
-    "mode": "system",
+    "dark": "ultraViolet Blur",
+    "light": "Zedokai Light",
+    "mode": "dark",
   },
   "format_on_save": "on",
   "inlay_hints": {
@@ -358,7 +354,7 @@
     "active_line_width": 3,
     "line_width": 2,
     "background_coloring": "disabled",
-    "enabled": true,
+    "enabled": false,
     "coloring": "fixed",
   },
   "relative_line_numbers": "disabled",

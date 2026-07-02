@@ -49,12 +49,6 @@
     },
   },
   {
-    "context": "Workspace",
-    "bindings": {
-      "alt-t": "terminal_panel::ToggleFocus",
-    },
-  },
-  {
     "context": "Editor",
     "unbind": {
       "cmd-]": "editor::Indent",
@@ -122,4 +116,9 @@
       "M": "vim::PreviousSubwordEnd",
     },
   },
+  {
+    "bindings": {
+      "alt-t": "workspace::NewCenterTerminal"
+    }
+  }
 ]
