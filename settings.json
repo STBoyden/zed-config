@@ -198,7 +198,11 @@
     "button": true,
     "enabled": true,
   },
-  "icon_theme": "Colored Zed Icons Theme Dark",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Colored Zed Icons Theme Dark",
+    "dark": "Colored Zed Icons Theme Dark",
+  },
   "outline_panel": {
     "dock": "left",
   },
@@ -208,8 +212,8 @@
     "show_nav_history_buttons": true,
   },
   "centered_layout": {
-    "left_padding": 0.05,
-    "right_padding": 0.05,
+    "left_padding": null,
+    "right_padding": null,
   },
   "project_panel": {
     "hide_hidden": false,
@@ -233,8 +237,8 @@
   },
   "use_autoclose": true,
   "ui_font_size": 15.0,
-  "buffer_font_size": 15.0,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 17.0,
+  "buffer_font_family": "Iosevka Nerd Font",
   "buffer_line_height": "comfortable",
   "buffer_font_features": {
     // for monaspace fonts
@@ -291,7 +295,7 @@
   },
   "theme": {
     "dark": "ultraViolet Blur",
-    "light": "Zedokai Light",
+    "light": "ultraViolet Blur",
     "mode": "dark",
   },
   "format_on_save": "on",
@@ -305,6 +309,9 @@
     "show_other_hints": true,
   },
   "terminal": {
+    "button": false,
+    "flexible": true,
+    "bell": "system",
     "shell": {
       "with_arguments": {
         "program": "nu",
@@ -312,12 +319,12 @@
         "title_override": null,
       },
     },
-    "dock": "right",
+    "dock": "bottom",
     "show_count_badge": true,
     "toolbar": {
       "breadcrumbs": false,
     },
-    "font_family": "JetBrainsMono Nerd Font",
+    "font_family": "Iosevka Nerd Font",
     "font_features": {
       // for monaspace fonts
       // "calt": true, // texture healing
@@ -341,7 +348,7 @@
       // "cv32": true, // angled: <= >=
       // "cv62": true, // @_
     },
-    "font_size": 15.0,
+    "font_size": 16.0,
     "env": {
       "EDITOR": "zed --wait",
     },
