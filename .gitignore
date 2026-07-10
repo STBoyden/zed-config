@@ -2,6 +2,7 @@
 /embeddings
 /prompts
 /themes
+/.black-metal-theme
 /settings_backup.json
 **/.DS_Store
 **/tmp

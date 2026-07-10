@@ -7,6 +7,7 @@
 // run `zed: open default settings` from the command palette (cmd-shift-p /
 // ctrl-shift-p)
 {
+  "markdown_preview_font_size": 14.0,
   "text_rendering_mode": "platform_default",
   "proxy": "",
   "redact_private_values": false,
@@ -200,8 +201,8 @@
   },
   "icon_theme": {
     "mode": "light",
-    "light": "Colored Zed Icons Theme Dark",
-    "dark": "Colored Zed Icons Theme Dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
   },
   "outline_panel": {
     "dock": "left",
@@ -237,8 +238,8 @@
   },
   "use_autoclose": true,
   "ui_font_size": 15.0,
-  "buffer_font_size": 17.0,
-  "buffer_font_family": "Iosevka Nerd Font",
+  "buffer_font_size": 14.0,
+  "buffer_font_family": "0xProto Nerd Font",
   "buffer_line_height": "comfortable",
   "buffer_font_features": {
     // for monaspace fonts
@@ -294,8 +295,8 @@
     "toggle_relative_line_numbers": true,
   },
   "theme": {
-    "dark": "ultraViolet Blur",
-    "light": "ultraViolet Blur",
+    "dark": "Black Metal (Immortal) - Blurred",
+    "light": "Onyx Light",
     "mode": "dark",
   },
   "format_on_save": "on",
@@ -324,7 +325,7 @@
     "toolbar": {
       "breadcrumbs": false,
     },
-    "font_family": "Iosevka Nerd Font",
+    "font_family": "0xProto Nerd Font",
     "font_features": {
       // for monaspace fonts
       // "calt": true, // texture healing
@@ -348,7 +349,7 @@
       // "cv32": true, // angled: <= >=
       // "cv62": true, // @_
     },
-    "font_size": 16.0,
+    "font_size": 13.0,
     "env": {
       "EDITOR": "zed --wait",
     },
