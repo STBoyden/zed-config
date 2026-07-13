@@ -199,11 +199,7 @@
     "button": true,
     "enabled": true,
   },
-  "icon_theme": {
-    "mode": "light",
-    "light": "Zed (Default)",
-    "dark": "Zed (Default)",
-  },
+  "icon_theme": "Zed (Default)",
   "outline_panel": {
     "dock": "left",
   },
@@ -294,11 +290,7 @@
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
   },
-  "theme": {
-    "dark": "Black Metal (Immortal) - Blurred",
-    "light": "Onyx Light",
-    "mode": "dark",
-  },
+  "theme": "Black Metal (Immortal) - Blurred",
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false,
@@ -417,6 +409,10 @@
     "button": true,
   },
   "languages": {
+    "CSharp": {
+      "format_on_save": "on",
+      "formatter": { "external": { "command": "csharpier", "arguments": ["format"] } },
+    },
     "Prisma": {
       "prettier": {
         "allowed": false,
