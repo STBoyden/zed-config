@@ -290,7 +290,7 @@
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
   },
-  "theme": "Black Metal (Immortal) - Blurred",
+  "theme": "Black Metal (Immortal) - Opaque",
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false,
