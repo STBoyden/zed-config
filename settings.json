@@ -140,7 +140,7 @@
   "use_system_prompts": false,
   "preferred_line_length": 100,
   "soft_wrap": "none",
-  "colorize_brackets": true,
+  "colorize_brackets": false,
   "sticky_scroll": {
     "enabled": false,
   },
@@ -235,7 +235,7 @@
   "use_autoclose": true,
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
-  "buffer_font_family": "0xProto Nerd Font",
+  "buffer_font_family": "IoskeleyMono Nerd Font",
   "buffer_line_height": "comfortable",
   "buffer_font_features": {
     // for monaspace fonts
@@ -309,15 +309,14 @@
       "with_arguments": {
         "program": "nu",
         "args": ["-l"],
-        "title_override": null,
       },
     },
     "dock": "bottom",
     "show_count_badge": true,
     "toolbar": {
-      "breadcrumbs": false,
+      "breadcrumbs": true,
     },
-    "font_family": "0xProto Nerd Font",
+    "font_family": "IoskeleyMono Nerd Font",
     "font_features": {
       // for monaspace fonts
       // "calt": true, // texture healing
@@ -400,7 +399,7 @@
   },
   "diagnostics": {
     "lsp_pull_diagnostics": {
-      "enabled": true
+      "enabled": true,
     },
     "include_warnings": true,
     "inline": {

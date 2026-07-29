@@ -120,5 +120,11 @@
     "bindings": {
       "alt-t": "workspace::NewCenterTerminal"
     }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "cmd-j": "workspace::ToggleBottomDock"
+    }
   }
 ]
