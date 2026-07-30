@@ -12,12 +12,12 @@
       "k": ["workspace::SendKeystrokes", "g k"],
     },
   },
-  {
-    "context": "!AcpThread && Editor && (vim_mode == normal || vim_mode == visual)",
-    "bindings": {
-      "k": ["workspace::SendKeystrokes", "k z z"],
-    },
-  },
+  // {
+  //   "context": "!AcpThread && Editor && (vim_mode == normal || vim_mode == visual)",
+  //   "bindings": {
+  //     "k": ["workspace::SendKeystrokes", "k z z"],
+  //   },
+  // },
   {
     "context": "Workspace",
     "unbind": {
@@ -76,12 +76,12 @@
       "j": ["workspace::SendKeystrokes", "g j"],
     },
   },
-  {
-    "context": "!AcpThread && Editor && (vim_mode == normal || vim_mode == visual)",
-    "bindings": {
-      "j": ["workspace::SendKeystrokes", "j z z"],
-    },
-  },
+  // {
+  //   "context": "!AcpThread && Editor && (vim_mode == normal || vim_mode == visual)",
+  //   "bindings": {
+  //     "j": ["workspace::SendKeystrokes", "j z z"],
+  //   },
+  // },
   {
     "context": "(vim_mode == normal || vim_mode == visual) && !menu",
     "bindings": {
@@ -110,21 +110,26 @@
   {
     "context": "(Editor && (vim_mode == normal || vim_mode == visual)) || (VimControl && !menu)",
     "bindings": {
-      "n": "vim::NextSubwordStart",
-      "N": "vim::NextSubwordEnd",
-      "m": "vim::PreviousSubwordStart",
-      "M": "vim::PreviousSubwordEnd",
+      ", w": "vim::NextSubwordStart",
+      ", W": "vim::NextSubwordEnd",
+      ", b": "vim::PreviousSubwordStart",
+      ", B": "vim::PreviousSubwordEnd",
     },
   },
   {
     "bindings": {
-      "alt-t": "workspace::NewCenterTerminal"
-    }
+      "alt-t": "workspace::NewCenterTerminal",
+    },
   },
+  // {
+  //   "context": "Workspace",
+  //   "unbind": {
+  //     "cmd-j": "workspace::ToggleBottomDock"
+  //   }
+  // },
   {
-    "context": "Workspace",
-    "unbind": {
-      "cmd-j": "workspace::ToggleBottomDock"
-    }
-  }
+    "bindings": {
+      "alt-cmd-c": "workspace::ToggleCenteredLayout",
+    },
+  },
 ]

@@ -234,7 +234,7 @@
   },
   "use_autoclose": true,
   "ui_font_size": 15.0,
-  "buffer_font_size": 15.0,
+  "buffer_font_size": 16.0,
   "buffer_font_family": "IoskeleyMono Nerd Font",
   "buffer_line_height": "comfortable",
   "buffer_font_features": {
