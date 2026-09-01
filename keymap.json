@@ -22,6 +22,7 @@
     "context": "Workspace",
     "unbind": {
       "ctrl-`": "terminal_panel::Toggle",
+      "cmd-j": "workspace::ToggleBottomDock",
     },
   },
   {
@@ -121,15 +122,14 @@
       "alt-t": "workspace::NewCenterTerminal",
     },
   },
-  // {
-  //   "context": "Workspace",
-  //   "unbind": {
-  //     "cmd-j": "workspace::ToggleBottomDock"
-  //   }
-  // },
   {
     "bindings": {
       "alt-cmd-c": "workspace::ToggleCenteredLayout",
     },
   },
+  {
+    "bindings": {
+      "alt-z": "editor::RestartLanguageServer"
+    }
+  }
 ]

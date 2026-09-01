@@ -38,7 +38,7 @@
       "env": {},
     },
   },
-  "ui_font_family": "Helvetica",
+  "ui_font_family": ".SystemUIFont",
   "language_models": {
     "opencode": {
       "show_zen_models": false,
@@ -199,7 +199,11 @@
     "button": true,
     "enabled": true,
   },
-  "icon_theme": "Black Metal (Mayhem) Icons - Secondary",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
+  },
   "outline_panel": {
     "dock": "left",
   },
@@ -235,7 +239,7 @@
   "use_autoclose": true,
   "ui_font_size": 15.0,
   "buffer_font_size": 16.0,
-  "buffer_font_family": "IoskeleyMono Nerd Font",
+  "buffer_font_family": "SamFont",
   "buffer_line_height": "comfortable",
   "buffer_font_features": {
     // for monaspace fonts
@@ -290,7 +294,11 @@
     "use_smartcase_find": true,
     "toggle_relative_line_numbers": true,
   },
-  "theme": "Black Metal (Mayhem) - Blurred",
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
+  },
   "format_on_save": "on",
   "inlay_hints": {
     "enabled": false,
@@ -316,7 +324,7 @@
     "toolbar": {
       "breadcrumbs": true,
     },
-    "font_family": "IoskeleyMono Nerd Font",
+    "font_family": "SamFont Nerd Font",
     "font_features": {
       // for monaspace fonts
       // "calt": true, // texture healing
