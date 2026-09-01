@@ -38,7 +38,7 @@
       "env": {},
     },
   },
-  "ui_font_family": ".SystemUIFont",
+  "ui_font_family": "Ubuntu Sans",
   "language_models": {
     "opencode": {
       "show_zen_models": false,
@@ -239,7 +239,7 @@
   "use_autoclose": true,
   "ui_font_size": 15.0,
   "buffer_font_size": 16.0,
-  "buffer_font_family": "SamFont",
+  "buffer_font_family": "Ubuntu Sans Mono",
   "buffer_line_height": "comfortable",
   "buffer_font_features": {
     // for monaspace fonts
@@ -324,7 +324,7 @@
     "toolbar": {
       "breadcrumbs": true,
     },
-    "font_family": "SamFont Nerd Font",
+    "font_family": "UbuntuSansMono Nerd Font",
     "font_features": {
       // for monaspace fonts
       // "calt": true, // texture healing
