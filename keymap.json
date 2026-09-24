@@ -56,16 +56,6 @@
     },
   },
   {
-    "bindings": {
-      "cmd-}": "panel::NextPanelTab",
-    },
-  },
-  {
-    "bindings": {
-      "cmd-{": "panel::PreviousPanelTab",
-    },
-  },
-  {
     "context": "Editor",
     "unbind": {
       "cmd-[": "editor::Outdent",
@@ -129,7 +119,7 @@
   },
   {
     "bindings": {
-      "alt-z": "editor::RestartLanguageServer"
-    }
-  }
+      "alt-z": "editor::RestartLanguageServer",
+    },
+  },
 ]
